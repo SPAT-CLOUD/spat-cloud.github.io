@@ -1,7 +1,8 @@
-<button onclick="document.getElementById('fb').style.display='block';" style="border-radius:50%;border:none; background-color:#4FFFFF;float:right;right:2px;bottom:2px;width:80px;height:100px;opacity:0.8;position:fixed;"><img src="https://spat-cloud.github.io/data/DORAEMON1.png" width="40" height="40" alt="Doraemon"><br>Report</button>
+<button onclick="document.getElementById('fb').style.display='block';" style="border-radius:50%;border:none;color:#000;background-color:#4FFFFF;float:right;right:2px;bottom:2px;width:80px;height:100px;opacity:0.8;position:fixed;" id="rp"><img src="https://spat-cloud.github.io/data/DORAEMON1.png" width="40" height="40" alt="Doraemon"><br>Report</button>
 
 </p><!--stsrt-->
-<div id="fb" style="display:none;"><br>
+
+<div id="fb" style="display:none;"><br>
 <script type="text/javascript">
 
 function fs()
@@ -16,9 +17,25 @@ setTimeout(() => $HId('ti').innerHTML = 'POSTED COMMENT',$HVanish('FN'),$HVanish
 }
 else{ alert("fill"); return false;}
 }
+function hc()
+{
+var g = document.getElementsByTagName('script');
+for(i=0;i<g.length;i++)
+{
+    if(g[0].src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js")
+    {
+       return true;
+    }
+    else
+    {
+        alert("HarScript.v2.9.Latest.min.js Not Found To Link Follow Steps:\n1) <script async src='https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js'></script> in <head> section of your website\n2) Make sure <body> also present in your Website");
+    }
+}
+}
+setTimeout(hc,1000);
 </script>
 <iframe name="fg" style="display:none;"></iframe>
-<form action="" method="POST" style="border:2px solid #DDD; background-color:#FFF;width:360px;height:500px;text-align:center;box-shadow:12px 8px 8px #000;top:2px;bottom:4px;left:4px;right:8px;position:fixed;" onsubmit="return fs()"><center><h1 id="ti">Report Issue</h1></center>
+<form action="" method="POST" style="border:2px solid #DDD;color:#000;background-color:#FFF;width:360px;height:500px;text-align:center;box-shadow:12px 8px 8px #000;top:2px;bottom:4px;left:4px;right:8px;position:fixed;" onsubmit="return fs()"><center><h1 id="ti">Report Issue</h1></center>
 <input type="text" name="f" id="FN" placeholder="Firstname" required><br>
 <input type="text" name="f" id="LN" placeholder="Lastname" required><br>
 <input type="email" name="f" id="EM" placeholder="Email" required=""><br>
