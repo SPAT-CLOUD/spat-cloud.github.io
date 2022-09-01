@@ -1,0 +1,29 @@
+<button onclick="document.getElementById('fb').style.display='block';" style="border-radius:50%;border:none; background-color:#4FFFFF;float:right;right:2px;bottom:2px;width:80px;height:100px;opacity:0.8;position:fixed;"><img src="https://spat-cloud.github.io/data/DORAEMON1.png" width="40" height="40" alt="Doraemon"><br>Report</button>
+
+</p><!--stsrt-->
+<div id="fb" style="display:none;"><br>
+<script type="text/javascript">
+
+function fs()
+{
+var a,b,c,d,e,u,Zx;
+u = $Hdecode("aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvdS8yL2QvZS8xRkFJcFFMU2Z0aEFPeXkyb0YzOGxVNWY0YWczdWxKOEFIY1JYdFBISEotaWJSaDdVZlhfNmV0dy9mb3JtUmVzcG9uc2U/ZW50cnkuMTkwOTU4ODUxPQ==");
+if(($HId('FN').value!=""&&$HId('FN').value!=null)&& ($HId('LN').value!=""&&$HId('LN').value!=null)&& ($HId('EM').value!=""&&$HId('EM').value!=null) && ($HId('COM').value!=""&&$HId('COM').value!=null))
+{
+Zx = "{FN:" + " " + $HId('FN').value + "}" + "," + "{LN:" + " " + $HId('LN').value + "}" + "," + "{EM:" + " " + $HId('EM').value + "}" + "," + "{COM:" + " " + $HId('COM').value + "}";
+window.open(u + Zx,"fg");
+setTimeout(() => $HId('ti').innerHTML = 'POSTED COMMENT',$HVanish('FN'),$HVanish('LN'),$HVanish('EM'),$HVanish('COM'),2000);
+}
+else{ alert("fill"); return false;}
+}
+</script>
+<iframe name="fg" style="display:none;"></iframe>
+<form action="" method="POST" style="border:2px solid #DDD; background-color:#FFF;width:360px;height:500px;text-align:center;box-shadow:12px 8px 8px #000;top:2px;bottom:4px;left:4px;right:8px;position:fixed;" onsubmit="return fs()"><center><h1 id="ti">Report Issue</h1></center>
+<input type="text" name="f" id="FN" placeholder="Firstname" required><br>
+<input type="text" name="f" id="LN" placeholder="Lastname" required><br>
+<input type="email" name="f" id="EM" placeholder="Email" required=""><br>
+<textarea rows="4" cols="30"  name="f" id="COM" placeholder="Comment" required></textarea><br>
+<input type="submit" value="POST COMMENT" style="color:#FFF;border:none; background-color:#4ACFFC;width:180px;height:60px;">
+</form>
+<button onclick="this.parentElement.style.display='none'" style="background-color:#FF0000;color:#FFF;border-radius:50%;border:none;width:40px;height:40px;font-size:18px; float:right;text-align:center;top:2px;right:16px;position:fixed;">&times;</button>
+</div><!--END-->
