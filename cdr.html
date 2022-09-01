@@ -4,6 +4,7 @@
 <title>Coder.mhd</title>
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#000">
+<script async src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js"></script>
 </head>
 
 <body style="background-color:#000;">
@@ -32,70 +33,45 @@
 &nbsp;&nbsp;<button onclick="ts()" id="22">Test Word</button>
 <br/>
 <div id="ts" style="background-color:indigo;color:gold; font-size:14px; padding:.4em .2em;width:200px;height:220px;"></div>
-<!--
 
-function f()
-{
-var  e =  "";
-  var  t = document.getElementsByTagName('div');
-var  rs = prompt('Entwr','');
-for(i=0;i<rs.length;i++)
-{
-  e +=  rs[i].replace("&","&#x");
-}
-t[0]. innerHTML= e;
-}
-f();
-
--->
 </body>
 <script>
 function ur()
 {
-     var t = document.getElementById('3');
-     var r = document.getElementById('4');
-
-     var g  = escape(t.value).split('%u').join('&');
-r.value = g;
-if(t.value!=="" || t.value == null)
-r.style.display = "block";
- /*for(i=0;i<g.length;i++)
-{
-  ty += g[i].replace("&",&#x");
-}
-gh.value = ty;*/
+     
+     var g  = escape($HId('3').value).split('%u').join('&');
+$HId('4').value = g;
+if($HId('3').value!=="" || $HId('3').value == null)
+$HShow('4');
+ 
 }
 function t()
 {
     var y = "";
-    var gh = document.getElementById('4');
-  var uu = document.getElementById('5');
+    
     for(i=0;i<gh.value.length;i++)
 {
-  y +=  gh.value[i].replace("&","&#x");
+  y +=  $HId('4').value[i].replace("&","&#x");
 }
-uu.value = y;
-if(gh.value!=="" || gh.value == null)
-uu.style.display = "block";
+$HId('5').value = y;
+if($HId('4').value!=="" || $HId('4').value == null)
+$HShow('5');
 }
 function sp()
 {
     var y = "";
-    var gh = document.getElementById('5');
-  var uu = document.getElementById('6');
-    for(i=0;i<gh.value.length;i++)
+    
+    for(i=0;i<$HId('5').value.length;i++)
 {
-  y +=  gh.value[i].replace("%","&#x");
+  y +=  $HId('5').value[i].replace("%","&#x");
 }
-uu.value = y;
-if(uu.value!=="" || uu.value == null)
-uu.style.display = "block";
+$HId('6').value = y;
+if($HId('6').value!=="" || $HId('6').value == null)
+$HShow('6');
 }
 function ts()
 {
- var d = document.getElementById('ts');
-var uu = document.getElementById('6');
-d.innerHTML = uu.value;
+$HId('ts').innerHTML = $HId('6').value;
 }
 </script>
 <style>
