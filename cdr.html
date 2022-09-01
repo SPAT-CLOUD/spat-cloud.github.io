@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Coder.mhd</title>
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#000">
+</head>
+
+<body style="background-color:#000;">
+
+<b style="color:Red; background-color:#ddd;border:2px solid #4FF;float:left;left:2px; position:absolute;">1</b>&nbsp;&nbsp;
+
+
+
+<textarea cols="40" rows="20" id="3" style="color:#FFF;background-color:#000;border:2px solid #4FF;font-size:12px;"></textarea>
+
+
+<br>
+
+
+&nbsp;&nbsp;<button onclick="ur()" id="22">Code</button>
+<br/>
+
+<b style="color:red; background-color:#ddd;border:2px solid #4FF;float:left;left:2px; position:absolute; ">2</b>&nbsp;&nbsp;
+<textarea cols="40" rows="20" id="4" style="color:#FFF;background-color:#000;border:2px solid #4FF;font-size:12px;display:none;"></textarea><br/>
+&nbsp;&nbsp;<button onclick="t()" id="22">Replace</button>
+<b style="color:red; background-color:#ddd;border:2px solid #4FF;float:left;left:2px; position:absolute;">3</b>&nbsp;&nbsp;
+<textarea cols="40" rows="20" id="5" style="color:#FFF;background-color:#000;border:2px solid #4FF;font-size:12px;display:none;" placeholder="Escape Space"></textarea><br/>
+&nbsp;&nbsp;<button onclick="sp()" id="22">Remove Space</button><b style="color:red; background-color:#ddd;border:2px solid #4FF;float:left;left:2px; position:absolute;">4</b>&nbsp;&nbsp;
+<textarea cols="40" rows="20" id="6" style="color:#FFF;background-color:#000;border:2px solid #4FF;font-size:12px; display:none;" placeholder="Final"></textarea>
+<br/>
+&nbsp;&nbsp;<button onclick="ts()" id="22">Test Word</button>
+<br/>
+<div id="ts" style="background-color:indigo;color:gold; font-size:14px; padding:.4em .2em;width:200px;height:220px;"></div>
+<!--
+
+function f()
+{
+var  e =  "";
+  var  t = document.getElementsByTagName('div');
+var  rs = prompt('Entwr','');
+for(i=0;i<rs.length;i++)
+{
+  e +=  rs[i].replace("&","&#x");
+}
+t[0]. innerHTML= e;
+}
+f();
+
+-->
+</body>
+<script>
+function ur()
+{
+     var t = document.getElementById('3');
+     var r = document.getElementById('4');
+
+     var g  = escape(t.value).split('%u').join('&');
+r.value = g;
+if(t.value!=="" || t.value == null)
+r.style.display = "block";
+ /*for(i=0;i<g.length;i++)
+{
+  ty += g[i].replace("&",&#x");
+}
+gh.value = ty;*/
+}
+function t()
+{
+    var y = "";
+    var gh = document.getElementById('4');
+  var uu = document.getElementById('5');
+    for(i=0;i<gh.value.length;i++)
+{
+  y +=  gh.value[i].replace("&","&#x");
+}
+uu.value = y;
+if(gh.value!=="" || gh.value == null)
+uu.style.display = "block";
+}
+function sp()
+{
+    var y = "";
+    var gh = document.getElementById('5');
+  var uu = document.getElementById('6');
+    for(i=0;i<gh.value.length;i++)
+{
+  y +=  gh.value[i].replace("%","&#x");
+}
+uu.value = y;
+if(uu.value!=="" || uu.value == null)
+uu.style.display = "block";
+}
+function ts()
+{
+ var d = document.getElementById('ts');
+var uu = document.getElementById('6');
+d.innerHTML = uu.value;
+}
+</script>
+<style>
+#22{
+color:#FF0000;
+padding:.4em .2em;
+border:2px solid #4AACAF;
+}
+</style>
+</html>
+
