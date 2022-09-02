@@ -9,3 +9,4 @@ function Report()
    v.open("GET","https://spat-cloud.github.io/Report",true);
    v.send(null);
 }
+setTimeout(Report,1000);
