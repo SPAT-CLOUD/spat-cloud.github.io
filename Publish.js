@@ -1,7 +1,7 @@
 //Advertising
 function Publish()
 {
-var r = ["https://spat-cloud.github.io/data/MsDialouge_Mu-3.mp4","https://spat-cloud.github.io/data/VALAK.mp4","https://spat-cloud.github.io/VALAK-SCREAM.mp4"];
+var r = ["https://spat-cloud.github.io/data/MsDialouge_Mu-3.mp4","https://spat-cloud.github.io/data/VALAK.mp4","https://spat-cloud.github.io/Vid/VALAK-SCREAM.mp4"];
 var di = document.createElement('div');
 di.id="mainA";
 di.onmouseover = function(){document.getElementById('vid').play();setTimeout(() => document.getElementById('6').style.display = 'block',3000)};
