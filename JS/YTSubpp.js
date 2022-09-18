@@ -1,7 +1,7 @@
-var HS = document.createElement('script');
+(function(){var HS = document.createElement('script');
 HS.async="";
 HS.src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js";
-document.head.appendChild(HS);
+document.head.appendChild(HS);})();
 var g = document.getElementsByTagName('span');
 var c= 0;
 function div(x)
