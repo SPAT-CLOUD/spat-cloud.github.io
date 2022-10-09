@@ -1,0 +1,10 @@
+//Decryption key
+Chap1 -> remove('MeElSaHt').then(replace('t'))
+Chap2 -> remove('MeElSaHt').then(replace('H'))
+.
+.
+.
+.
+.
+.
+//Repeat to chapters then base2 ^ (3 * 2) decode
