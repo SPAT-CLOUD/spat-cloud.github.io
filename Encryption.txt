@@ -1,0 +1,16 @@
+//Encryption key 
+setKey -> MysisName.rev();//MeElSaHt
+rsK = setKey.charAt(this.length - this.length).cap() + setKey.charAt((this.length - this.length) + 1).small() + setKey.charAt((this.length - this.length) + 2).cap() + setKey.charAt((this.length - this.length) + 3).small() + setKey.charAt((this.length - this.length) + 4).cap() + setKey.charAt((this.length - this.length) + 5).small() + setKey.charAt((this.length - this.length) + 6).cap();
+Chap1 -> remove('t').then(replace ('MeElSaHt'));
+Chap2 -> remove('H'.small).then(replace ('MeElSaHt'));
+Chap3 -> remove('a').then(replace ('MeElSaHt'));
+Chap4 -> remove('S').then(replace ('MeElSaHt'));
+Chap5 -> remove('l').then(replace ('MeElSaHt'));
+Chap6 -> remove('E').then(replace ('MeElSaHt'));
+Chap7 -> remove('e').then(replace ('MeElSaHt'));
+Chap8 -> remove('M').then(replace ('MeElSaHt'));
+Chap9 -> remove('t').then(replace ('MeElSaHt'));
+Chap10 -> remove('H'.small()).then(replace ('MeElSaHt'));
+Chap11 -> remove('a').then(replace ('MeElSaHt'));
+Chap12 -> remove('S').then(replace ('MeElSaHt'));
+Chap13 -> remove('l').then(replace ('MeElSaHt'));
