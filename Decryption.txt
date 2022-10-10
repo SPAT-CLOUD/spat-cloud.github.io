@@ -1,6 +1,6 @@
 //Decryption key
-Chap1 -> remove('MeElSaHt').then(replace('t'))
-Chap2 -> remove('MeElSaHt').then(replace('H'))
+Chap1 -> remove(setKey).then(replace(setKey.lastWord))
+Chap2 -> remove(setKey).then(replace((setKey.lastWord - 1).small()))
 .
 .
 .
