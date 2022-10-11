@@ -9,7 +9,7 @@
 <script async src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js"></script>
 </head>
 <style>
-#P1{
+#P1,#P2,#P3,#P4,#P5,#P6,#P7,#P8,#P9,#P10,#P11,#P12,#P13,#P14{
 color:gold;
 Background-color:indigo;
 border:2px solid #000;
@@ -28,32 +28,62 @@ text-shadow:2px 2px 4px #000;
 </style>
 <body>
 <h1 align="center">My Story</h1><br> 
+<button onclick="V1()">Format_1</button>&nbsp;&nbsp;<button onclick="V2()">Format_2</button>
 <p>1st line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partA()">Touch</p><br>
+<p id="P1"></p><br>
 <p>2nd line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partB()">Touch</p><br>
+<p id="P2"></p><br>
 <p>3rd line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partC()">Touch</p><br>
+<p id="P3"></p><br>
 <p>4rth line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partD()">Touch</p><br>
+<p id="P4"></p><br>
 <p>5th line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partE()">Touch</p><br>
+<p id="P5"></p><br>
 <p>6th line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partF()">Touch</p><br>
+<p id="P6"></p><br>
 <p>7th line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partG()">Touch</p><br>
+<p id="P7"></p><br>
 <p>8th line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partH()">Touch</p><br>
+<p id="P8"></p><br>
 <p>9th line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partI()">Touch</p><br>
+<p id="P9"></p><br>
 <p>10th line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partJ()">Touch</p><br>
+<p id="P10"></p><br>
 <p>11th line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partK()">Touch</p><br>
+<p id="P11"></p><br>
 <p>12th line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partL()">Touch</p><br>
+<p id="P12">Touch</p><br>
 <p>13th line</p><br>
-<p id="P1" onmouseover="this.innerHTML = new Secrect().partM()">Touch</p><br>
-<p id="P1">To be Continued...</p>
+<p id="P13"></p><br>
+<p id="P14">To be Continued...</p>
 </body>
+<script type="text/javascript">
+function V1()
+{
+var hid = new Secrect();
+$HId('P1').innerHTML = hid.partA();
+$HId('P2').innerHTML = hid.partB();
+$HId('P3').innerHTML = hid.partC();
+$HId('P4').innerHTML = hid.partD();
+$HId('P5').innerHTML = hid.partE();
+$HId('P6').innerHTML = hid.partF();
+$HId('P7').innerHTML = hid.partG();
+$HId('P8').innerHTML = hid.partH();
+$HId('P9').innerHTML = hid.partI();
+$HId('P10').innerHTML = hid.partJ();
+$HId('P11').innerHTML = hid.partK();
+$HId('P12').innerHTML = hid.partL();
+$HId('P13').innerHTML = hid.partM();
+}
+function V2()
+{
+var hid = new Secrect();
+$HId('P1').innerHTML = hid.Aerror();
+$HId('P2').innerHTML = hid.Berror();
+$HId('P10').innerHTML = hid.Jerror();
+$HId('P12').innerHTML = hid.Lerror();
+$HId('P13').innerHTML = hid.Merror();
+}
+
+</script>
 </html>
