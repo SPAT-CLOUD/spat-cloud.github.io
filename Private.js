@@ -45,19 +45,19 @@ class Secrect
       return "RnJvbSB0aGF0IGRheSBvdXIgY29udmVyc2F0aW9uIGN1dHRlZCBzaGUgYXZvaWRzIG1lIGFueSB3YXkgU2hlIHNob3VsZCBiZSBzYWZlIHdoZXJlIGV2ZXIgc2hlIHNob3VsZCBsaXZlIGhhcHB5LiBNeSBMb3ZlbHkgc2lzdGVyLg";
    }
    partJ()
-   {//h
+   {
       return "SSB3YW50IHRvIHRTWVFbFNhSHQbGsgdG8geW91IHNpc3RlciBidXQgd2l0aCB3aGljaCB1Z2x5IGZTWVFbFNhSHQY2UgIGkgc2TWVFbFNhSHQvdWxkIHRTWVFbFNhSHQbGsgdG8geW91Py4";
    }
    partK()
-   {//a
+   {
       return "VGhhbmt5b3UgZm9yIGV2ZXJ5dGhpbmcgbXkgc2lzdGVyIGxvbmcgbGlmZSBtb3JlIHRoYW4gMTAwIHllYXJzIEhhcHBpbHkgVGhhdCdzIG15IFdpc2ggeW91IHRhbGsgdG8gbWUgb3Igbm90IHRoYXQgTWVFbFNhSHQXMgeW91ciB3TWVFbFNhSHQXNoIGJ1dCBiZSBzYWZlLg";
    }
    partL()
-   {//S
+   {
       return "TWVFbFNhSHQWYgVGhpcyBJcyBzZWVuIGJ5IFlvdTWVFbFNhSHQBPayBJYW0gaGFwcHkuTXkgTGlmZTWVFbFNhSHQBpcyBteTWVFbFNhSHQBzaXN0ZXIgb25seTWVFbFNhSHQ4";
    }
    partM()
-   {//l
+   {
       return "IEkgVGhvdWdodCBUaGVyZSBpcyBhIFNpc3RTWVFbFNhSHQciBmb3IgbWUgSSBjYW4gU2hhcmUgbXkgYWxsIHByb2JsZW1zIGJ1dCBpdCBmYWTWVFbFNhSHQsZWQgdG8gc2hhcmUgbXkgcHJvYmxTWVFbFNhSHQbXMgdG8gbXkgc2TWVFbFNhSHQzdGVyLg";
    }
    Aerror()
