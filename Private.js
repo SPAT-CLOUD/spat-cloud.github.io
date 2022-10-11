@@ -60,4 +60,56 @@ class Secrect
    {//l
       return "IEkgVGhvdWdodCBUaGVyZSBpcyBhIFNpc3RTWVFbFNhSHQciBmb3IgbWUgSSBjYW4gU2hhcmUgbXkgYWxsIHByb2JsZW1zIGJ1dCBpdCBmYWTWVFbFNhSHQsZWQgdG8gc2hhcmUgbXkgcHJvYmxTWVFbFNhSHQbXMgdG8gbXkgc2TWVFbFNhSHQzdGVyLg";
    }
+   Aerror()
+   {
+     return window.atob(this.partA().split(this.setKey()).join('On'));
+   }
+   Berror()
+   {
+     return window.atob(this.partB().split(this.setKey()).join('OnETuE'));
+   }
+   Cerror()
+   {
+     return window.atob(this.partC().split(this.setKey()).join('ImEeTtO'));
+   }
+   Derror()
+   {
+     return window.atob(this.partD().split(this.setKey()).join('OnEgIrL'));
+   }
+   Eerror()
+   {
+     return window.atob(this.partE().split(this.setKey()).join('rEvNaMeIs'));
+   }
+   Ferror()
+   {
+     return window.atob(this.partF().split(this.setKey()).join('MeElSaHtDoT'));
+   }
+   Gerror()
+   {
+     return window.atob(this.partG().split(this.setKey()).join('ShEbEcAmE'));
+   }
+   Herror()
+   {
+     return window.atob(this.partH().split(this.setKey()).join('mYsIsTeR'));
+   }
+   Ierror()
+   {
+     return window.atob(this.partI().split(this.setKey()).join('InOtHaTeMySiStErLeSs'));
+   }
+   Jerror()
+   {
+     return window.atob(this.partJ().split(this.setKey()).join('wItHoUtHeRiNoTaBlEtOlIvE'));
+   }
+   Kerror()
+   {
+     return window.atob(this.partK().split(this.setKey()).join('lOnGlIvE'));
+   }
+   Lerror()
+   {
+     return window.atob(this.partL().split(this.setKey()).join('mYsIsTeRaDdMyLiFeTiMeAlSo'));
+   }
+   Merror()
+   {
+     return window.atob(this.partM().split(this.setKey()).join('mEwIlLdOaNyThInGfOrHeRsHeShOuLdBeSaFeAnDhApPyHeRpRoBlEmSaNdPaInShOuLdBeMiNesHeShOuLdBeHaPpYiSwIsHoFYoUrBrOThErHaRsHa'));
+   }
 }
