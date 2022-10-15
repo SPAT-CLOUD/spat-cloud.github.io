@@ -11,6 +11,7 @@ var vd = document.createElement('video');
 vd.id="vid";
 vd.setAttribute("style","top:2px;left:0;right:0;width:360px;height:600px;position:fixed;margin-top:6% auto;");
 vd.oncontextmenu=function(){return false;};
+vd.onmouseover = function(){this.play();};
 vd.loop="true";
 di.appendChild(vd);
 var srcA = document.createElement('source');
