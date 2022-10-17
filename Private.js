@@ -25,8 +25,8 @@ class Secrect
       return "QnV0IFN1ZGRlbmx5IG91ciBjb252ZXJzYXRpb24gY3V0dGVkIHdoeTWVFbFNhSHQBJIGFsc28gZG9uJ3Qga25vdy4";
    }
    partE()
-   {
-      return "V2hhdCBpIGRpZCB3cm9uZyBpIGFsc28gZG9uJ3Qga25vdz8";
+   {//E.scan() -> gotChar = this.remove(mySisName.CharSecond.small()).then(replace(class.getMethodName = 'setKey'));
+      return "V2TWVFbFNhSHQTWVFbFNhSHQdCBpIGRpZCB3cm9uZyBpIGFsc28gZG9uJ3Qga25vdz8";
    }
    partF()
    {
@@ -38,19 +38,20 @@ class Secrect
    }
    partH()
    {
-      return "T24gTmV4dCBkYXkgRnJpZGF5IFNoZSBTYWlkIE5vdCB0byBtZXNzYWdlIGFnYWluLkkgc2FpZCBvayBhbmQgSSBDcmllZCBTWVFbFNhSHQb3QgTG90IExvdCBTWVFbFNhSHQb3QgTG90IExvdC4uLi4uLi4uLi4uLi4uLi4";
+      return "T24gTmV4dCBkYXkgRnJpZGF5IFNoZSBTYWTWVFbFNhSHQkITWVFbFNhSHQ5vdCB0byBtZXNzYWdTWVFbFNhSHQIGFnYWTWVFbFNhSHQuLkkgc2FpZCBvayBhbmQgSSBDcmTWVFbFNhSHQTWVFbFNhSHQZCBTWVFbFNhSHQb3QgTG90ITWVFbFNhSHQxvdCBTWVFbFNhSHQb3QgTG90ITWVFbFNhSHQxvdC4uLi4uLi4uLi4uLi4uLi4";
    }
    partI()
-   {
-      return "RnJvbSB0aGF0IGRheSBvdXIgY29udmVyc2F0aW9uIGN1dHRlZCBzaGUgYXZvaWRzIG1lIGFueSB3YXkgU2hlIHNob3VsZCBiZSBzYWZlIHdoZXJlIGV2ZXIgc2hlIHNob3VsZCBsaXZlIGhhcHB5LiBNeSBMb3ZlbHkgc2lzdGVyLg";
+   {//I.scan() -> gotChar = this.remove(mySisname.rev.CharFour.small()).then(replace(class.getMethodName = 'setKey'));
+
+      return "RnJvbSB0aGF0IGRheSBvdXIgY29udmVyc2F0aW9uIGN1dHRTWVFbFNhSHQZCBzaGUgYXZvaWRzIG1TWVFbFNhSHQIGFueSB3YXkgU2hTWVFbFNhSHQIHNob3VsZCBiZSBzYWZTWVFbFNhSHQIHdoZXJTWVFbFNhSHQIGV2ZXIgc2hTWVFbFNhSHQIHNob3VsZCBsaXZTWVFbFNhSHQIGhhcHB5LiBNeSBMb3ZTWVFbFNhSHQbHkgc2TWVFbFNhSHQzdGVyLg";
    }
    partJ()
    {
       return "SSB3YW50IHRvIHRTWVFbFNhSHQbGsgdG8geW91IHNpc3RlciBidXQgd2l0aCB3aGljaCB1Z2x5IGZTWVFbFNhSHQY2UgIGkgc2TWVFbFNhSHQvdWxkIHRTWVFbFNhSHQbGsgdG8geW91Py4";
    }
    partK()
-   {
-      return "VGhhbmt5b3UgZm9yIGV2ZXJ5dGhpbmcgbXkgc2lzdGVyIGxvbmcgbGlmZSBtb3JlIHRoYW4gMTAwIHllYXJzIEhhcHBpbHkgVGhhdCdzIG15IFdpc2ggeW91IHRhbGsgdG8gbWUgb3Igbm90IHRoYXQgTWVFbFNhSHQXMgeW91ciB3TWVFbFNhSHQXNoIGJ1dCBiZSBzYWZlLg";
+   {//K.scan() -> gotChar = this.remove(mySisName.CharSecond.small()).then(replace(class.getMethodName = 'setKey'));
+      return "VGTWVFbFNhSHQTWVFbFNhSHQbmt5b3UgZm9yIGV2ZXJ5dGTWVFbFNhSHQpbmcgbXkgc2lzdGVyIGxvbmcgbGlmZSBtb3JlIHRoYW4gMTAwIHllYXJzIETWVFbFNhSHQTWVFbFNhSHQcHBpbHkgVGTWVFbFNhSHQTWVFbFNhSHQdCdzIG15IFdpc2ggeW91IHRTWVFbFNhSHQbGsgdG8gbWUgb3Igbm90IHRoYXQgTWVFbFNTWVFbFNhSHQSHQXMgeW91ciB3TWVFbFNTWVFbFNhSHQSHQXNoIGJ1dCBiZSBzYWZlLg";
    }
    partL()
    {
