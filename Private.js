@@ -37,8 +37,8 @@ class Secrect
       return "T25lIGRhTWVFbFNhSHQSBJIE1lc3NhZ2VkIGhlciBvbiBKdWx5IDIyIDIwMjIu";
    }
    partH()
-   {
-      return "T24gTmV4dCBkYXkgRnJpZGF5IFNoZSBTYWTWVFbFNhSHQkITWVFbFNhSHQ5vdCB0byBtZXNzYWdTWVFbFNhSHQIGFnYWTWVFbFNhSHQuLkkgc2FpZCBvayBhbmQgSSBDcmTWVFbFNhSHQTWVFbFNhSHQZCBTWVFbFNhSHQb3QgTG90ITWVFbFNhSHQxvdCBTWVFbFNhSHQb3QgTG90ITWVFbFNhSHQxvdC4uLi4uLi4uLi4uLi4uLi4";
+   {//H.scan -> gotchar = this.remove(mySisName.rev.CharFour.small()).replace(class.getMethodName='setKey')
+      return "T24gTmV4dCBEYXkgRnJpZGF5IFNoZSBTYWTWVFbFNhSHQkIE5vdCB0byBtZXNzYWdTWVFbFNhSHQIGFnYWTWVFbFNhSHQuLkkgc2FpZCBvayBhbmQgSSBDcmTWVFbFNhSHQTWVFbFNhSHQZCBMb3QgTG90IExvdCBMb3QgTG90IExvdC4uLi4uLi4uLi4uLg";
    }
    partI()
    {//I.scan() -> gotChar = this.remove(mySisname.rev.CharFour.small()).then(replace(class.getMethodName = 'setKey'));
@@ -50,8 +50,8 @@ class Secrect
       return "SSB3YW50IHRvIHRTWVFbFNhSHQbGsgdG8geW91IHNpc3RlciBidXQgd2l0aCB3aGljaCB1Z2x5IGZTWVFbFNhSHQY2UgIGkgc2TWVFbFNhSHQvdWxkIHRTWVFbFNhSHQbGsgdG8geW91Py4";
    }
    partK()
-   {//K.scan() -> gotChar = this.remove(mySisName.CharSecond.small()).then(replace(class.getMethodName = 'setKey'));
-      return "VGTWVFbFNhSHQTWVFbFNhSHQbmt5b3UgZm9yIGV2ZXJ5dGTWVFbFNhSHQpbmcgbXkgc2lzdGVyIGxvbmcgbGlmZSBtb3JlIHRoYW4gMTAwIHllYXJzIETWVFbFNhSHQTWVFbFNhSHQcHBpbHkgVGTWVFbFNhSHQTWVFbFNhSHQdCdzIG15IFdpc2ggeW91IHRTWVFbFNhSHQbGsgdG8gbWUgb3Igbm90IHRoYXQgTWVFbFNTWVFbFNhSHQSHQXMgeW91ciB3TWVFbFNTWVFbFNhSHQSHQXNoIGJ1dCBiZSBzYWZlLg";
+   {//K.scan -> gotchar = this.remove(mySisName.rev.CharFour.small()).replace(class.getMethodName='setKey');
+      return "TG9uZyBMaXZTWVFbFNhSHQIFRoYXNsZWVtIE1vcmUgVGhhbiAxMDAgWWVhcnMgb3IgRXF1YWwgdG8gMTAwIFTWVFbFNhSHQTWVFbFNhSHQYXJzIFTWVFbFNhSHQvdSBXaWxsIGJTWVFbFNhSHQIGTWVFbFNhSHQuIG15IEhTWVFbFNhSHQYXJ0IFdob2xTWVFbFNhSHQIGxpZmUgdGTWVFbFNhSHQsbCBteSBEZWF0aC5BbGwgWW91ciBXaXNoIENvbWUgVHJ1ZS4";
    }
    partL()
    {
