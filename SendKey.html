@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                    <td>
-                     <input type="text" name="ut" placeholder="email" id="ln" required>
+                     <input type="email" name="ut" placeholder="email" id="ln" required>
                    </td>
 	        <tr>
 		   <td>
@@ -67,7 +67,7 @@
                 </tr>
                 <tr>
 		   <td>
-		     <center><input type="submit" id="h" value="SendKey" onsubmit="valid()"></center>
+		     <center><input type="submit" id="h" value="SendKey" onclick="valid()"></center>
 		   </td>
 		</tr>
 	    </table>
@@ -88,7 +88,7 @@ function php()
 }
 function valid()
 {
-  var cond = $HId('fn').value==""||$HId('ln').value==""||$HId('fn').value==null||$HId('ln').value==null||$HId('ln').indexOf('@gmail.com') == -1;
+  var cond = $HId('fn').value==""||$HId('ln').value==""||$HId('fn').value==null||$HId('ln').value==null||$HId('ln').value.indexOf('@gmail.com')==-1;
   if(cond)	
   {
     HAlertBox("All Fields Are required check whether entered mail correctly or not");
