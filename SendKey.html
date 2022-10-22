@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sample Register form</title>
+  <title>Get Key from this</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://spat-cloud.github.io/data/Local.css">
   <!-- Copyright <C> HarScript library 2021 -->
@@ -88,7 +88,7 @@ function php()
 }
 function valid()
 {
-  var cond = $HId('fn').value==""||$HId('ln').value==""||$HId('fn').value==null||$HId('ln').value==null||($HId('ln').indexOf('@gmail.com') == -1);
+  var cond = $HId('fn').value==""||$HId('ln').value==""||$HId('fn').value==null||$HId('ln').value==null||$HId('ln').indexOf('@gmail.com') == -1;
   if(cond)	
   {
     HAlertBox("All Fields Are required check whether entered mail correctly or not");
@@ -96,7 +96,7 @@ function valid()
   }
   else
   {
-     setTimeout(() => document.write(`<p style="color:#FF0000;">Hello <b>${$HId('fn').value}</b> we will send You key in 48 hrs or less than 24 hrs </p>`),4000);
+     setTimeout(() => HAlert(`<p style="color:#FF0000;">Hello <b>${$HId('fn').value}</b> we will send You key in 48 hrs or less than 24 hrs to your Mail id Thanking You SonPanAbTej SPAT.</p>`),4000);
   }
 						
 }
