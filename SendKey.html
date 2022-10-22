@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample Register form</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://spat-cloud.github.io/data/Local.css">
+  <!-- Copyright <C> HarScript library 2021 -->
+  <script async src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js"></script>
+<noscript>
+				<style>
+								#Msg
+								{
+												color:#000000;
+												font-size:12px;
+												margin:4% auto;
+												background-color:#DDD;
+												width:100%;
+												left:0;
+												right:2px;
+												border-radius:4px;
+												font-weight:588;
+												border:2px solid #FF0000;
+												padding:.8em 4em;
+												box-shadow:0px 8px 4px 2px #000;
+												animation:ColorChange 4s 1;
+								}
+								@keyframes ColorChange
+								{
+												from
+												{
+																background-color:#FF0000;
+																margin:24% auto;
+												}
+												to
+												{
+																background-color:yellow;
+																
+																
+																
+												}
+								}
+				</style>
+			
+							<p id="Msg">No <i>JavaScript</i> please  Enable <i>JavaScript</i> in Your Browser And Reload page</p>
+			
+</noscript>
+</head>
+<body>
+  <center>
+    <div id="hj">
+       <p id="title">Getkey from this</p>	
+	  <form action="Test.php" method="POST" id="util" onmouseover="php()">
+	     <table border="0">
+		<tr>
+		  <td>
+                     <input type="text" name="data" placeholder="Full Name" id="fn" required>
+                  </td>
+                </tr>
+                <tr>
+                   <td>
+                     <input type="text" name="ut" placeholder="email" id="ln" required>
+                   </td>
+	        <tr>
+		   <td>
+		     <input type="checkbox"  id="45" onclick="mem()"><font color="#FFF">Send Me Key to my Mail</font>
+                   </td>
+                </tr>
+                <tr>
+		   <td>
+		     <center><input type="submit" id="h" value="SendKey" onclick="valid()"></center>
+		   </td>
+		</tr>
+	    </table>
+	  </form>
+	</div>
+	</center>
+				
+	<p id="bt">Powered by SonPanAbTej SPAT</p>
+</body>
+
+<script>
+function php() 
+{ 				
+  $HId('util').action = $Hdecode64("aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZm9ybXMvdS8wL2QvZS8xRkFJcFFMU2Z0aEFPeXkyb0YzOGxVNWY0YWczdWxKOEFIY1JYdFBISEotaWJSaDdVZlhfNmV0dy9mb3JtUmVzcG9uc2U="); 			
+  $HId('util').target="5"; 		
+  $HId('fn').name=$Hdecode64("ZW50cnkuMTkwOTU4ODUx"); 
+  $HId('ln').name = $Hdecode64("ZW50cnkuNDcwNTEyNTAy");
+}
+function valid()
+{
+  var cond = $HId('fn').value==""||$HId('ln').value==""||$HId('fn').value==null||$HId('ln').value==null||($HId('ln').indexOf('@gmail.com') == -1);
+  if(cond)	
+  {
+    HAlertBox("All Fields Are required check whether entered mail correctly or not");
+    return false;
+  }
+  else
+  {
+     setTimeout(() => document.write(`<p style="color:#FF0000;">Hello <b>${$HId('fn').value}</b> we will send You key in 48 hrs or less than 24 hrs </p>`),4000);
+  }
+						
+}
+function mem()
+{
+    if($HId('45').checked == true)
+    {
+	$HShow('h');
+    }
+    else
+   {
+       $HVanish('h');
+   }
+}
+function fr()
+{
+   window.addEventListener("contextmenu",function(e){HWarning("RightClick Disabled");e.preventDefault();});
+   var gh = document.createElement('iframe');
+   gh.name="5";
+   gh.style.display="none";
+   document.body.appendChild(gh);
+}
+fr();
+</script>
+</html>
