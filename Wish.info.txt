@@ -1,0 +1,3 @@
+P1 -> mySisName.CharFour.Captial;
+P2 -> mySisName.CharSecond.small;
+P3 -> P1;
