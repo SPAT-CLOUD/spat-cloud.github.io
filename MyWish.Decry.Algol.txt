@@ -5,4 +5,7 @@ s2 -> then.rev(msg)
 s3 -> msg.delAll(mySisName.CharSecond.small())
 s4 -> s3.add(Secret2Key)
 END 
-
+BEGIN
+myAlgol -> rev(s4)
+msg -> (b64 * (myAlgol)).delAll(Secrect2key).add(mySisName.CharSecond)
+END
