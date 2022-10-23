@@ -1,0 +1,8 @@
+BEGIN 
+myAlgol -> getMsg
+msg -> b64 * (getMsg)
+s2 -> then.rev(msg)
+s3 -> msg.delAll(mySisName.CharSecond.small())
+s4 -> s3.add(Secret2Key)
+END 
+
