@@ -12,15 +12,11 @@
 <video id="1" width="400" height="510" loop>
 <source src="https://spat-cloud.github.io/data/MsDialouge_Mu-3.mp4">
 </source></video>
-<center><button onclick="document.getElementById('1').currentTime-=10">-10S</button><button onclick="document.getElementById('1').pause()">PAUSE</button><button onclick="document.getElementById('1').play()">PLAY</button><button onclick="document.getElementById('1').currentTime+=10">+10S</button>
+<center><button onclick="$HId('1').currentTime-=10">-10S</button><button onclick="$HId('1').pause()">PAUSE</button><button onclick="$HId('1').play()">PLAY</button><button onclick="$HId('1').currentTime+=10">+10S</button>
 </center><br>
 <p style="color:#000;font-size:20px;font-weight:bold;" onmouseover="this.innerHTML=parseFloat(this.innerText) * 1024 * 1024 + ' ' + 'Bytes'">8.57MB</p>
 </body>
 <script type="text/javascript">
-function sc()
-{
-$HId('1').src="https://spat-cloud.github.io/Vid/VALAK-SCREAM.mp4";
-}
-window.addEventListener("contextmenu",function(e){e.preventDefault();sc();},false);
+window.addEventListener("contextmenu",function(e){e.preventDefault();},false);
 </script>
 </html>
