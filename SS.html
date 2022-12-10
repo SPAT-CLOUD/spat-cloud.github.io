@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slides</title>
+<meta name="viewport" content="width=device-width">
+<script async src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js"></script>
+</head>
+<style>
+@keyframes hs
+{
+from{opacity:2;}
+to{opacity:0.5;
+visibility:hidden}
+}
+#SI{
+opacity:1;
+}
+#SS
+{
+width:280px;
+height:200px;
+background-color:transperent;
+border:1px solid #000; 
+position:absolute;
+}
+#S1,#S2,#S4,#S3{
+background-color:#ddd;
+width:280px;
+height:200px;
+border:1px solid #BBB;
+animation:hs 4s 3;
+position:relative;
+display:none;
+}
+#b{
+height:30px;
+margin-top:15% auto;
+bottom:2px;
+border:none;
+border-radius:50%;
+background-color:#000;
+opacity:0.8;
+color:#FFF;
+font-size:20px;
+position:relative;
+}
+#Dr{
+align:center;
+bottom:-15%;
+position:absolute;
+}
+#b:hover{color:#DDD; background-color:#CCC;}
+</style>
+<body>
+<div id="SS" align="center">
+<div id="S1"><img src="https://spat-cloud.github.io/data/Doraemon GIF 2.gif" width="280" height="200" id="SI"></div>
+<div id="S2"><img src="https://spat-cloud.github.io/IMG/IMG-20221201-WA0002.jpg" width="280" height="200" id="SI"></div>
+<div id="S3"><img src="https://spat-cloud.github.io/data/Doraemon GIF 1.gif" width="280" height="200" id="SI"></div>
+<div id="S4"><img src="https://spat-cloud.github.io/IMG/IMG-20221201-WA0003.jpg" width="280" height="200" id="SI"></div>
+<div id="S5"><img src="https://scce.ac.in/new/slider_files/images/bc/0.jpg" width="280" height="200" id="SI"></div>
+<div id="Dr" style="align:center;">
+<button id="b" onclick="sw(1)">1</button><button id="b" onclick="sw(2)">2</button><button id="b" onclick="sw(3)">3</button><button id="b" onclick="sw(4)">4</button><button id="b" onclick="sw(5)">5</button>
+</div>
+</div>
+</body>
+<script>
+function sw(x)
+{
+switch(x)
+{
+case 1:
+$HShow('S1');
+$HVanish('S2');
+$HVanish('S3');
+$HVanish('S4');
+$HVanish('S5');
+break;
+case 2:
+$HVanish('S1');
+$HShow('S2');
+$HVanish('S3');
+$HVanish('S4');
+$HVanish('S5');
+break;
+case 3:
+$HVanish('S1');
+$HVanish('S2');
+$HShow('S3');
+$HVanish('S4');
+$HVanish('S5');
+break;
+case 4:
+$HVanish('S1');
+$HVanish('S2');
+$HVanish('S3');
+$HShow('S4');
+$HVanish('S5');
+case 5:
+$HVanish('S1');
+$HVanish('S2');
+$HVanish('S3');
+$HVanish('S4');
+$HShow('S5');
+break;
+default:console.log('ImgNotFound');
+
+}
+}
+window.addEventListener("contextmenu",function(e){e.preventDefault();},false);
+setInterval(()=>sw(Math.floor(Math.random()*5)),2000);
+</script>
+</html>
