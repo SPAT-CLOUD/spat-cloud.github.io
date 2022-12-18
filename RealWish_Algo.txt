@@ -1,0 +1,5 @@
+data = getDat('RealWish.txt')
+data.rev()
+prop = getClass('Secrect') from 'Private.js'
+data.delChar(prop.getMethod('setKey')).repl(MySN.rev().charFour(!Start0).captial())
+Final=data.deconv64()
