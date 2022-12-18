@@ -12,6 +12,8 @@ export default class WishOfUglyFellow
            {
                es +=this.responseText;
            }
+           t.open('GET','https://spat-cloud.github.io/MySecrect.txt',true);
+           t.send(null);
            return es;
        }
 }
