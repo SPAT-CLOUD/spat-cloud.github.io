@@ -7,17 +7,11 @@ export default class WishOfUglyFellow
        show()
        {
            var t = new XMLHttpRequest();
-           var es = "";
            t.onload=function()
            {
-               es +=this.responseText;
+               document.getElementById(g).innerHTML=this.responseText;
            }
            t.open('GET','https://spat-cloud.github.io/MySecrect.txt',true);
            t.send(null);
-           return es;
-       }
-       reveal()
-       {
-          return this.show();
        }
 }
