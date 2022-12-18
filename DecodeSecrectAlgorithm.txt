@@ -1,0 +1,4 @@
+Dat=getDat('MySecrect.txt')-> Dat.conv64() -> Dat.rev()
+-> getClass('Secrect') from 'Private.js' -> 
+Dat.remove(key).join(MySN.!rev().FourChar(!Start0))
+->return Dat.final
