@@ -16,4 +16,8 @@ export default class WishOfUglyFellow
            t.send(null);
            return es;
        }
+       reveal()
+       {
+          return this.show();
+       }
 }
