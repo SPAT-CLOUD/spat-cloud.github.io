@@ -1,4 +1,4 @@
-export default WishOfUglyFellow class
+export default class WishOfUglyFellow
 {
        constructor(x)
        {
