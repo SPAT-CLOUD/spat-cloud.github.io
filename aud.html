@@ -17,8 +17,7 @@ border-radius:4px;
 }
 </style>
 <body>
-<label for="Autoplay">Autoplay</label>
-<input type="checkbox" name="Autoplay" value="Check" onclick="Auto()">
+<input type="button" id="ctrl" value="Autoplay On" onclick="Auto()">
 <audio id="Song" style="display:none;">
 <source src="" type="audio/mp3">
 </audio>
@@ -71,11 +70,13 @@ C1 = $HId('Rd').innerHTML == "KP" && $HId('Song').currentTime == $HId('Song').du
 C2 = $HId('Rd').innerHTML == "KK" && $HId('Song').currentTime == $HId('Song').duration;
 C3 =  $HId('Rd').innerHTML == "BBRD" && $HId('Song').currentTime == $HId('Song').duration;
 C4 =  $HId('Rd').innerHTML == "AA" && $HId('Song').currentTime == $HId('Song').duration;
-if(C1) $HId('Song').src = isg['Kanchana'].aud[1];
-else if(C2)  $HId('Song').src = isg['Kanchana'].aud[0];
-else if(C3)  $HId('Song').src = isg['Enthiran'].aud[1];
-else if(C4)  $HId('Song').src = isg['Enthiran'].aud[0];
-else $HId('Song').loop="true";
+if(C1){$HId('Song').src = isg['Kanchana'].aud[1];
+$HId('Song').play();
+}
+else if(C2){$HId('Song').src = isg['Kanchana'].aud[0];$HId('Song').play();}
+else if(C3){$HId('Song').src = isg['Enthiran'].aud[1];$HId('Song').play();}
+else if(C4){$HId('Song').src = isg['Enthiran'].aud[0];$HId('Song').play();}
+else{$HId('Song').src=isg[c[Math.floor(Math.random() * c.length)]].aud[c[Math.floor(Math.random() * c.length)]];$HId('Song').play();}
 }
 </script>
 </html>
