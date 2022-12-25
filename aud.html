@@ -4,7 +4,8 @@
 <title>Random Songs(Tamil)</title>
 <meta name="viewport" content="width=device-width">
 <script async src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js"></script>
-
+<link rel="icon" sizes="192x192" href="/data/DORAEMON1.png">
+<meta name="Description" content="DORAEMON Cheap Audio player Created By SonPanAbTej SPAT,INC Contains Kanchana Tamil Songs, Enthiran Songs Tamil">"
 </head>
 <style>
 #ctrl{
@@ -22,8 +23,13 @@ border-radius:4px;
 </audio>
 <h6>Kanchana Songs Tamil</h6>
 <ol type="1">
-<li><button onclick="Kan(1)">Karrupu peragza</button></li>
-<li><button onclick="Kan(2)">Kodiyavanin kathya</button></li>
+<li><button onclick="Splay('Kanchana',1)">Karrupu peragza</button></li>
+<li><button onclick="Splay('Kanchana',2)">Kodiyavanin kathya</button></li>
+<ol>
+<h6>Enthiran Songs Tamil</h6>
+<ol type="1">
+<li><button onclick="Splay('Enthiran',1)">Boom Boom Robo da</button></li>
+<li><button onclick="Splay('Enthiran',2)">Arima Arima</button></li>
 <ol>
 <center><img src="/data/DORAEMON1.png" width="250" height="340" alt="DEFAULT.jpg" id="Img"></center><hr>
 <!--<p id="play" align="center" style="color:#DDD;width:250px;height:340px;">-->
@@ -34,18 +40,24 @@ border-radius:4px;
 </body>
 <script>
 var isg = {
-"kanchana":
+"Kanchana":
 {
 "ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZsvY8PDt0a7Mf67QmOVCC5jIUYzhYTqUpg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfdS1fM2fWyKyrtKN-Gyy5-b83H6gLYsu1bg&usqp=CAU"],
 "aud":["https://vedimuthu.com/downloader/nUsVVzjMlYv3QTX61I2PQQ/1671965292/p128_cdn/11451","https://vedimuthu.com/downloader/4KS4lNuJQFXmzjq6mnSSUw/1671965227/p128_cdn/11449"],
 "title":["Karrpu peragza","Kodiyavanin kathya"]
+},
+"Enthiran":
+{
+"ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tXMiP-UK-UI2WH_N8l04aQUvmNsdI9aFDw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT8Y3fF9EDqcVjV_tCSsloLvxpjjB7F4H5Vw&usqp=CAU"],
+"aud":["https://tamilpaatu.com/downloader/E7mMU81rrt60Umxtc-aIqQ/1671975802/p128_cdn/11005","https://tamilpaatu.com/downloader/E7mMU81rrt60Umxtc-aIqQ/1671975802/p128_cdn/11001"],
+"title":["Boom Boom Robo da","Arima Arima"]
 }
 };
-function Kan(x)
+function Splay(k,x)
 {
-$HId('Song').src=isg['kanchana'].aud[x-1];
-$HId('Img').src=isg['kanchana'].ic[x-1];
-$HId('tit').innerHTML = isg['kanchana'].title[x-1];
+$HId('Song').src=isg[k].aud[x-1];
+$HId('Img').src=isg[k].ic[x-1];
+$HId('tit').innerHTML = isg[k].title[x-1];
 setTimeout(() => $HId('Song').play(),1000);
 }
 $HId('Song').onplay=function(){setInterval(()=>$HId('play').style.backgroundColor='#' + (Math.floor(Math.random() * 2147483647)).toString(16),1000);};
