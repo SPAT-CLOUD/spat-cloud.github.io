@@ -16,7 +16,29 @@ border-radius:4px;
 }
 </style>
 <body>
+
+<audio id="Song" style="display:none;">
+<source src="" type="audio/mp3">
+</audio>
+<button onclick="Kan(1)">Karrupu peragza</button><br><button onclick="Kan(2)">Kodiyavanin kathya</button>
 <center><img src="/data/DORAEMON1.png" width="250" height="340" alt="DEFAULT.jpg" id="Img"></center><hr>
-<p id="play" align="center" style="color:#DDD;width:400px;height:180px;"><button onclick="" id="ctrl">-10</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button align="center" onclick="" id="ctrl">pause</button><button onclick="" style="float:right;right:4px;position:absolute;" id="ctrl">+10</button></p>
+<p id="play" align="center" style="color:#DDD;width:400px;height:180px;"><button onclick="$HId('Song').currentTime -=10" id="ctrl">-10</button>&nbsp;&nbsp;&nbsp;<button onclick="$HId('Song').play()" id="ctrl">play</button>&nbsp;&nbsp;&nbsp;<button align="center" onclick="$HId('Song').pause()" id="ctrl">pause</button><button onclick="$HId('Song').currentTime +=10" style="float:right;right:4px;position:absolute;" id="ctrl">+10</button><br><p id="tit">....title....</p></p>
 </body>
+<script>
+var isg = {
+"kanchana":
+{
+"ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZsvY8PDt0a7Mf67QmOVCC5jIUYzhYTqUpg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfdS1fM2fWyKyrtKN-Gyy5-b83H6gLYsu1bg&usqp=CAU"],
+"aud":["https://vedimuthu.com/downloader/nUsVVzjMlYv3QTX61I2PQQ/1671965292/p128_cdn/11451","https://vedimuthu.com/downloader/4KS4lNuJQFXmzjq6mnSSUw/1671965227/p128_cdn/11449"],
+"title":["Karrpu peragza","Kodiyavanin kathya"]
+}
+};
+function Kan(x)
+{
+$HId('Song').src=isg['kanchana'].aud[x-1];
+$HId('Img').src=isg['kanchana'].ic[x-1];
+$HId('tit').innerHTML = isg['kanchana'].title[x-1];
+setTimeout(() => $HId('Song').play(),1000);
+}
+</script>
 </html>
