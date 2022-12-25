@@ -20,9 +20,18 @@ border-radius:4px;
 <audio id="Song" style="display:none;">
 <source src="" type="audio/mp3">
 </audio>
-<button onclick="Kan(1)">Karrupu peragza</button><br><button onclick="Kan(2)">Kodiyavanin kathya</button>
+<h6>Kanchana Songs Tamil</h6>
+<ol type="1">
+<li><button onclick="Kan(1)">Karrupu peragza</button></li>
+<li><button onclick="Kan(2)">Kodiyavanin kathya</button></li>
+<ol>
 <center><img src="/data/DORAEMON1.png" width="250" height="340" alt="DEFAULT.jpg" id="Img"></center><hr>
-<p id="play" align="center" style="color:#DDD;width:400px;height:180px;"><button onclick="$HId('Song').currentTime -=10" id="ctrl">-10</button>&nbsp;&nbsp;&nbsp;<button onclick="$HId('Song').play()" id="ctrl">play</button>&nbsp;&nbsp;&nbsp;<button align="center" onclick="$HId('Song').pause()" id="ctrl">pause</button><button onclick="$HId('Song').currentTime +=10" style="float:right;right:4px;position:absolute;" id="ctrl">+10</button><br><p id="tit">....title....</p></p>
+<p id="play" align="center" style="color:#DDD;width:250px;height:340px;">
+<!--<button onclick="$HId('Song').currentTime -=10" id="ctrl">-10</button>&nbsp;&nbsp;&nbsp;<button onclick="$HId('Song').play()" id="ctrl">play</button>&nbsp;&nbsp;&nbsp;<button align="center" onclick="$HId('Song').pause()" id="ctrl">pause</button><button onclick="$HId('Song').currentTime +=10" style="float:right;right:4px;position:absolute;" id="ctrl">+10</button>-->
+
+<p style="background-color:#000;color:#DDD;width:280px;height:80px;display:block;margin-top:-5%;position:relative;"><button onclick="$HId('Song').currentTime -=10" style="float:left;left:0;position:absolute;" id="ctrl">-10s</button><button onclick="$HId('Song').play()" align="center" style="left:25%; position:absolute;" id="ctrl">play</button><button onclick="$HId('Song').pause()" style="right:25%; position:absolute;" id="ctrl">pause</button><button onclick="$HId('Song').currentTime +=10" style="float:right;right:0;position:absolute;" id="ctrl">+10s</button></p>
+
+<br><p id="tit">....title....</p></p>
 </body>
 <script>
 var isg = {
