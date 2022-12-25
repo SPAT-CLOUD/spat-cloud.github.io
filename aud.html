@@ -69,18 +69,63 @@ $HId('Song').addEventListener("playing",Auto);
 function off(){ $HId('Song').removeEventListener("playing",Auto);
 }
 function Auto(){
+var c=["Kanchana","Enthiran"];
+var kpi = isg['Kanchana'].ic[0];
+var kpt = isg['Kanchana'].title[0];
+var kvi = isg['Kanchana'].ic[1];
+var kvt = isg['Kanchana'].title[1];
+var KPD = isg['Kanchana'].data[0];
+var KVD = isg['Kanchana'].data[1];
+var bbrdi = isg[c[1]].ic[0];
+var bbrdt = isg[c[1]].title[0];
+var bbrdd = isg[c[1]].data[0];
+var aai = isg[c[1]].ic[1];
+var aat = isg[c[1]].title[1];
+var aad = isg[c[1]].data[1];
+var mr = Math.floor(Math.random() * 1);
+var rm = Math.floor(Math.random() * 1);
+var ka = isg[c[0]].aud[rm];
+var ea = isg[c[1]].aud[rm];
+var eni = [bbrdi,aai];
+var ent = [bbrdt,aat];
+var end = [bbrdd,aad];
+var kni = [kpi,kvi];
+var knt = [kpt,kvt];
+var knd = [KPD,KVD];
 var C1,C2,C3,C4,C5,C6;
 C1 = $HId('Rd').innerHTML == "KP" && $HId('Song').ended;
 C2 = $HId('Rd').innerHTML == "KK" && $HId('Song').ended;
 C3 =  $HId('Rd').innerHTML == "BBRD" && $HId('Song').ended;
 C4 =  $HId('Rd').innerHTML == "AA" && $HId('Song').ended;
 if(C1){$HId('Song').src = isg['Kanchana'].aud[1];
+$HId('Img').src = kvi;
+$HId('tit').innerHTML = kvt;
+$HId('Rd').innerHTML = KVD;
 $HId('Song').play();
 }
-else if(C2){$HId('Song').src = isg['Kanchana'].aud[0];$HId('Song').play();}
-else if(C3){$HId('Song').src = isg['Enthiran'].aud[1];$HId('Song').play();}
-else if(C4){$HId('Song').src = isg['Enthiran'].aud[0];$HId('Song').play();}
-else{$HId('Song').src=isg[c[Math.floor(Math.random() * c.length)]].aud[c[Math.floor(Math.random() * c.length)]];$HId('Song').play();}
+else if(C2){$HId('Song').src = isg['Kanchana'].aud[0];
+$HId('Img').src=kpi;
+$HId('Rd').innerHTML = KPD;
+$HId('tit').innerHTML=kvt;
+$HId('Song').play();}
+else if(C3){$HId('Song').src = isg['Enthiran'].aud[1];
+$HId('Img').src = aai;
+$HId('tit').innerHTML = aat;
+$HId('Rd').innerHTML = aad;
+//$HId('Song').play();
+$HId('Song').play();}
+else if(C4){$HId('Song').src = isg['Enthiran'].aud[0];
+$HId('Img').src = bbrdi;
+$HId('tit').innerHTML = bbrdt;
+$HId('Rd').innerHTML = bbrdd;
+$HId('Song').play();}
+else{
+$HId('Song').src= mr==0?ka:ea;
+$HId('Img').src=  mr==0?kni[mr]:eni[mr];
+$HId('tit').innerHTML = mr==0?knt[mr]:ent[mr];
+$HId('Rd').innerHTML= mr==0?knd[mr]:end[mr];
+$HId('Song').play();
+}
 }
 
 </script>
