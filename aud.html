@@ -17,8 +17,9 @@ border-radius:4px;
 }
 </style>
 <body>
-<!--<input type="button" id="ctrl" value="Autoplay On" onclick="Auto()">
-<button onclick="off()" id="ctrl">Autoplay off</button>-->
+<!--<input type="button" id="ctrl" value="Autoplay On" onclick="Auto()">-->
+<button onclick="$HId('Song').loop='';" id="ctrl">Loop on</button><br>
+<button onclick="$HId('Song').removeAttribute('loop')" id="ctrl">Loop Off</button>
 <audio id="Song" style="display:none;" onended="Auto()">
 <source src="" type="audio/mp3">
 </audio>
