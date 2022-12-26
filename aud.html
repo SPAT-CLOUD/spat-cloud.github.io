@@ -128,9 +128,6 @@ $HId('tit').innerHTML = isg[k].title[x-1];
 $HId('Rd').innerHTML=isg[k].data[x-1];
 setTimeout(() => $HId('Song').play(),1000);
 }
-$HId('Song').addEventListener("playing",Auto);
-function off(){ $HId('Song').removeEventListener("playing",Auto);
-}
 function Auto(){
 var c=["Kanchana","Enthiran"];
 var kpi = isg['Kanchana'].ic[0];
