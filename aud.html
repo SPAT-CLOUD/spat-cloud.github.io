@@ -19,7 +19,7 @@ border-radius:4px;
 <body>
 <!--<input type="button" id="ctrl" value="Autoplay On" onclick="Auto()">
 <button onclick="off()" id="ctrl">Autoplay off</button>-->
-<audio id="Song" style="display:none;" onended="">
+<audio id="Song" style="display:none;" onended="Auto()">
 <source src="" type="audio/mp3">
 </audio>
 <h6>Kanchana Songs Tamil</h6>
@@ -184,7 +184,8 @@ $HId('Rd').innerHTML = aad;
 //$HId('Song').play();
 $HId('Song').play();
 }
-else if(C4){
+else if(C4)
+{
 $HId('Song').src = isg['Enthiran'].aud[0];
 $HId('Img').src = bbrdi;
 $HId('tit').innerHTML = bbrdt;
@@ -193,17 +194,18 @@ $HId('Song').play();
 }
 else
 {
-$HId('Song').src= mr==0?ka:ea;
+/*$HId('Song').src= mr==0?ka:ea;
 $HId('Img').src=  mr==0?kni[mr]:eni[mr];
 $HId('tit').innerHTML = mr==0?knt[mr]:ent[mr];
 $HId('Rd').innerHTML= mr==0?knd[mr]:end[mr];
-$HId('Song').play();
+$HId('Song').play();*/
+return true;
 }
 }
 }
 catch(e)
 {
-HAlert(e.stack);
+alert(e.stack);
 }
 
 </script>
