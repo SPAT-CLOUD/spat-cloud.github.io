@@ -19,7 +19,7 @@ border-radius:4px;
 <body>
 <!--<input type="button" id="ctrl" value="Autoplay On" onclick="Auto()">
 <button onclick="off()" id="ctrl">Autoplay off</button>-->
-<audio id="Song" style="display:none;" onended="Auto()">
+<audio id="Song" style="display:none;" onended="">
 <source src="" type="audio/mp3">
 </audio>
 <h6>Kanchana Songs Tamil</h6>
@@ -62,63 +62,64 @@ border-radius:4px;
 <p id="Rd" style="display:none;"></p>
 </body>
 <script>
-var isg = {
-"Kanchana":
+var isg = 
 {
-"ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZsvY8PDt0a7Mf67QmOVCC5jIUYzhYTqUpg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfdS1fM2fWyKyrtKN-Gyy5-b83H6gLYsu1bg&usqp=CAU"],
-"aud":["/audio/Kanchana/Karuppu-Perazhaga.mp3","/audio/Kanchana/Kodiyavanin-Kathaya.mp3"],
-"title":["Karrpu peragza","Kodiyavanin kathya"],
-"data":["KP","KK"]
-},
-"Enthiran":
-{
-"ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tXMiP-UK-UI2WH_N8l04aQUvmNsdI9aFDw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT8Y3fF9EDqcVjV_tCSsloLvxpjjB7F4H5Vw&usqp=CAU"],
-"aud":["/audio/Enthiran/Boom-Boom-Robo-Da.mp3","/audio/Enthiran/Arima-Arima.mp3"],
-"title":["Boom Boom Robo da","Arima Arima"],
-"data":["BBRD","AA"]
-},
-"Beast":
-{
-"ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdzBLaG8AHJXnyA1kEUzr8K-yWV2qTwsIvug&usqp=CAU"],
-"aud:["/Beast/Beast-Mode.mp3"],
-"title":["Beast Mode"],
-"data":["BM"]
-},
-"Master":
-{
-"ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVb-yOQrL88Yuyq45Jo4H3MDU1oZpIP-EBw&usqp=CAU"],
-"aud:["/Master/Polakatum-Para-Para.mp3"],
-"title":["Polakatum Para Para"],
-"data":["PPP"]
-},
-"KGF1":
-{
-"ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_u7QK8YBAPTpozf2M6sJ3e11CQ8HfjFrzg&usqp=CAU"],
-"aud:["/KGF1(TAMIL)/Dheera-Dheera.mp3"],
-"title":["Dheera Dheera Tamil"],
-"data":["DDT"]
-},
-"Peddanna":
-{
-"ic":["https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/fa/97/91/fa9791b1-a1b3-db8c-f848-2231ef1304d2/196292846010.jpg/1200x1200bf-60.jpg"],
-"aud:["/Peddanna/Hali-Hali.mp3"],
-"title":["Hali Hali"],
-"data":["HH"]
-},
-"JLK":
-{
-"ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpdKAbcv2bsyHnkUXnJ6pWeQjYn2ipWxHEw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmANEDkNXOfq-hmzDCT1XsVTG2XVew_O3_Fg&usqp=CAU"],
-"aud:["/Jai Lava Kusa/Raavana.mp3","/Jai Lava Kusa/Swing Zara.mp3"],
-"title":["Raavana","Swing Zara"],
-"data":["R","SZ"]
-},
-"KGF2":
-{
-"ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgXc2EjAiFc7ceux21zVSH2Zpn_lQXlBzeWw&usqp=CAU"],
-"aud":["/KGF2(TAMIL)/Toofan.mp3"],
-"title":["TOOFAN TAMIL"],
-"data":["TFN"]
-}
+    "Kanchana":
+    {
+        "ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFZsvY8PDt0a7Mf67QmOVCC5jIUYzhYTqUpg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfdS1fM2fWyKyrtKN-Gyy5-b83H6gLYsu1bg&usqp=CAU"],
+        "aud":["/audio/Kanchana/Karuppu-Perazhaga.mp3","/audio/Kanchana/Kodiyavanin-Kathaya.mp3"],
+        "title":["Karrpu peragza","Kodiyavanin kathya"],
+        "data":["KP","KK"]
+    },
+    "Enthiran":
+    {
+        "ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tXMiP-UK-UI2WH_N8l04aQUvmNsdI9aFDw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT8Y3fF9EDqcVjV_tCSsloLvxpjjB7F4H5Vw&usqp=CAU"],
+        "aud":["/audio/Enthiran/Boom-Boom-Robo-Da.mp3","/audio/Enthiran/Arima-Arima.mp3"],
+        "title":["Boom Boom Robo da","Arima Arima"],
+        "data":["BBRD","AA"]
+    },
+   "Beast":
+    {
+         "ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdzBLaG8AHJXnyA1kEUzr8K-yWV2qTwsIvug&usqp=CAU"],
+         "aud:["/Beast/Beast-Mode.mp3"],
+         "title":["Beast Mode"],
+         "data":["BM"]
+    },
+   "Master":
+    {
+         "ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVb-yOQrL88Yuyq45Jo4H3MDU1oZpIP-EBw&usqp=CAU"],
+         "aud:["/Master/Polakatum-Para-Para.mp3"],
+         "title":["Polakatum Para Para"],
+         "data":["PPP"]
+    },
+   "KGF1":
+   {
+         "ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo_u7QK8YBAPTpozf2M6sJ3e11CQ8HfjFrzg&usqp=CAU"],
+         "aud:["/KGF1(TAMIL)/Dheera-Dheera.mp3"],
+         "title":["Dheera Dheera Tamil"],
+         "data":["DDT"]
+    },
+    "Peddanna":
+    {
+        "ic":["https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/fa/97/91/fa9791b1-a1b3-db8c-f848-2231ef1304d2/196292846010.jpg/1200x1200bf-60.jpg"],
+        "aud:["/Peddanna/Hali-Hali.mp3"],
+        "title":["Hali Hali"],
+        "data":["HH"]
+    },
+    "JLK":
+    {
+      "ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpdKAbcv2bsyHnkUXnJ6pWeQjYn2ipWxHEw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmANEDkNXOfq-hmzDCT1XsVTG2XVew_O3_Fg&usqp=CAU"],
+      "aud:["/Jai Lava Kusa/Raavana.mp3","/Jai Lava Kusa/Swing Zara.mp3"],
+      "title":["Raavana","Swing Zara"],
+      "data":["R","SZ"]
+    },
+   "KGF2":
+   {
+      "ic":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgXc2EjAiFc7ceux21zVSH2Zpn_lQXlBzeWw&usqp=CAU"],
+      "aud":["/KGF2(TAMIL)/Toofan.mp3"],
+      "title":["TOOFAN TAMIL"],
+       "data":["TFN"]
+    }
 };
 function Splay(k,x)
 {
@@ -128,6 +129,7 @@ $HId('tit').innerHTML = isg[k].title[x-1];
 $HId('Rd').innerHTML=isg[k].data[x-1];
 setTimeout(() => $HId('Song').play(),1000);
 }
+/*
 function Auto(){
 var c=["Kanchana","Enthiran"];
 var kpi = isg['Kanchana'].ic[0];
@@ -186,7 +188,7 @@ $HId('tit').innerHTML = mr==0?knt[mr]:ent[mr];
 $HId('Rd').innerHTML= mr==0?knd[mr]:end[mr];
 $HId('Song').play();
 }
-}
+}*/
 
 </script>
 </html>
