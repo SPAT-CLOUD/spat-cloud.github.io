@@ -62,7 +62,6 @@ border-radius:4px;
 <p id="Rd" style="display:none;"></p>
 </body>
 <script>
-try{
 var isg = 
 {
     "Kanchana":
@@ -122,7 +121,14 @@ var isg =
        "data":["TFN"]
     }
 };
-
+function Splay(k,x)
+{
+$HId('Song').src=isg[k].aud[x-1];
+$HId('Img').src=isg[k].ic[x-1];
+$HId('tit').innerHTML = isg[k].title[x-1];
+$HId('Rd').innerHTML=isg[k].data[x-1];
+setTimeout(() => $HId('Song').play(),1000);
+}
 function Auto(){
 var c=["Kanchana","Enthiran"];
 var kpi = isg['Kanchana'].ic[0];
@@ -194,20 +200,9 @@ $HId('Rd').innerHTML= mr==0?knd[mr]:end[mr];
 $HId('Song').play();*/
 return true;
 }
+
 }
-function Splay(k,x)
-{
-$HId('Song').src=isg[k].aud[x-1];
-$HId('Img').src=isg[k].ic[x-1];
-$HId('tit').innerHTML = isg[k].title[x-1];
-$HId('Rd').innerHTML=isg[k].data[x-1];
-setTimeout(() => $HId('Song').play(),1000);
-}
-}
-catch(e)
-{
-alert(e.stack);
-}
+
 
 </script>
 </html>
