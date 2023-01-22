@@ -1,0 +1,18 @@
+! Encrypted!
+
+a=MultilingualData
+b=a.escape()
+c=b.del("%u").changeAll('&#x')
+d = scan(c).search('%20')
+if(d) c.del('%').changeAll('&#x')
+e1 = c.del('&#x').changeAll('T$')
+e = e1.conv64()
+f = RTL(e)
+
+! Decrypt !
+
+g = f.deconv64()
+h = g.del('T$').changeAll('&#x')
+
+Output:
+   //VIEW IN BROWSER HTML SUPPORT TO SEE OUTPUT
