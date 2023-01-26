@@ -9,7 +9,6 @@
 <a href="javascript:APD()">..Show Directories</a><br/>
 </body>
 <script type="text/javascript">
-var dir = ["Kanchana","Enthiran","KGF1(TAMIL)","KGF2(TAMIL)","Master","Jai Lava Kusa","Peddanna","Beast","Naane Varuvean","Vaathi(2023)","Rang De(2020)"];
 function an(x,y){
 var g = document.createElement('a');
 g.href=x;
@@ -23,6 +22,8 @@ document.appendChild(g);
 }
 function APD()
 {
+var dir = ["Kanchana","Enthiran","KGF1(TAMIL)","KGF2(TAMIL)","Master","Jai Lava Kusa","Peddanna","Beast","Naane Varuvean","Vaathi(2023)","Rang De(2020)"];
+
 for(i=0;i<dir.length;i++)
 {
 an("/" + dir[i],dir[i]);
