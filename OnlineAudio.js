@@ -1,19 +1,19 @@
 var Audio = {
      "Movies":
       {
-      "Lang":
-       {
-        "Telugu":
-         {
-"RangDe":{
-"EmithoIdhi":"https://s088.naasongs.download/Rang%20De%20-%20(2021)/[iSongs.info]%2001%20-%20Emito%20Idhi.mp3",
+             "Lang":
+             {
+                "Telugu":
+                 {
+                    "RangDe":{
+        "EmithoIdhi":"https://s088.naasongs.download/Rang%20De%20-%20(2021)/[iSongs.info]%2001%20-%20Emito%20Idhi.mp3",
 "BusStande":"https://s088.naasongs.download/Rang%20De%20-%20(2021)/[iSongs.info]%2002%20-%20Bus%20Stande%20Bus%20Stande.mp3",
 "NaaKanulu":"https://s088.naasongs.download/Rang%20De%20-%20(2021)/[iSongs.info]%2003%20-%20Naa%20Kanulu%20Yepudu.mp3",
 "Rangule":"https://s088.naasongs.download/Rang%20De%20-%20(2021)/[iSongs.info]%2005%20-%20Rangule.mp3",
 "Ooranta":"https://s088.naasongs.download/Rang%20De%20-%20(2021)/[iSongs.info]%2006%20-%20Oorantha.mp3",
 "ChoosiNerchukoku":"https://s088.naasongs.download/Rang%20De%20-%20(2021)/[iSongs.info]%2004%20-%20Choosi%20Nerchukoku.mp3"
 }
-}
+},
         "Tamil":
          {
       "Beast":{"ArabicKuthu":"https://mp3teluguwap.net/mp3/2022/Beast/Best%20-%20HQ/Arabic%20Kuthu.mp3",
