@@ -6,36 +6,6 @@
 "title":"",
 "URL":""
 },
-
-Movies
-     |
-     |___Lang
-            |
-            |___Telugu
-                     |
-                     |____RangDe
-                     |         |
-                     |         |___Emitho Idhi
-                     |         |___Bus Stande
-                     |         |___Na Kanulu Eppudu
-                     |         |___Rangule
-                     |         |___Ooranta Vennela
-                     |         |___Choosi Nerchukoku
-                     |
-                     |____Bimbisara
-                     |            |___Eeswarude
-                     |            |___Gulebakavali
-                     |            |___O Tene Palukula
-                     |            |___Neetho Unthe Chalu
-                     |            |___Vijay Ho
-                     |            |___Bimbisara Rap Song
-                     |____Sulthan
-                     |          |__Andhame Athivai
-                     |          |__Jai Sulthan
-
-                               
-
-
 */
 
 var ogg = {
@@ -82,6 +52,13 @@ var ogg = {
                             "SB":{"title":"SangliBungli","URL":"https://files.samadada.com/movies/Raghava_Lawrence/Kanchana/Sangili_Bungili_[SamaDada.Com].mp3"},
                             "KK":{"title":"KodiyavaninKathya","URL":"https://files.samadada.com/movies/Raghava_Lawrence/Kanchana/Kodiyavanin_Kathaya_[SamaDada.Com].mp3"}
                            },
+"Kanchana2":{
+"VEV":{"title":"Vaaya En Veera","URL":"https://isaiminisong.com/download.php?file=VGFtaWwgMjAxNSBTb25ncy9LYW5jaGFuYSAyL1ZhYXlhIEVuIFZlZXJhLm1wMw==&fileid=54898"},
+"SP":{"title":"Sillata Pillata","URL":"https://isaiminisong.com/download.php?file=VGFtaWwgMjAxNSBTb25ncy9LYW5jaGFuYSAyL1NpbGxhdHRhIFBpbGxhdHRhLm1wMw==&fileid=54897"},
+"MP":{"title":"Motta Paiyan","URL":"https://isaiminisong.com/download.php?file=VGFtaWwgMjAxNSBTb25ncy9LYW5jaGFuYSAyL01vdHRhIFBhaXlhLm1wMw==&fileid=54895"},
+"SM":{"title":"Sandi Muni","URL":"https://isaiminisong.com/download.php?file=VGFtaWwgMjAxNSBTb25ncy9LYW5jaGFuYSAyL1NhbmRpIE11bmkubXAz&fileid=54896"},
+"MM":{"title":"Moda Moda","URL":"https://isaiminisong.com/download.php?file=VGFtaWwgMjAxNSBTb25ncy9LYW5jaGFuYSAyL01vZGEgTW9kYS5tcDM=&fileid=54894"}
+},
                   "Enthiran":{
                             "AA":{"title":"ArimaArima","URL":"https://naasongs.vip/links/uploads/Enthiran%2520/Arima-Arima.mp3"},
                             "BBRD":{"title":"BoomBoomRoboDa","URL":"https://naasongs.vip/links/uploads/Enthiran%2520/Boom-Boom-Robo-Da.mp3"}
