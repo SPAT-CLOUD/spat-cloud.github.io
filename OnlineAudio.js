@@ -77,10 +77,10 @@ var ogg = {
                             "BM":{"title":"BeastMode","URL":"https://mp3teluguwap.net/mp3/2022/Beast/Best%20-%20HQ/Beast%20Mode.mp3"},
                             },
                    "Kanchana":{
-                            "KP":{"title":"KarrupuPerazhaga","URL":"https://naasongs.vip/myuploads/uploads/Kanchana%20/Karuppu%20Perazhaga.mp3"},
-                            "NN":{"title":"NilluNillu","URL":"https://naasongs.vip/myuploads/uploads/Kanchana%20/Nillu%20Nillu%20Nillu%20Nillu.mp3"},
-                            "SB":{"title":"SangliBungli","URL":"https://naasongs.vip/myuploads/uploads/Kanchana%20/Sangili%20Bungili%20-%20Masstamilan.in.mp3"},
-                            "KK":{"title":"KodiyavaninKathya","URL":"https://naasongs.vip/myuploads/uploads/Kanchana%20/Kodiyavanin%20Kathaya.mp3"}
+                            "KP":{"title":"KarrupuPerazhaga","URL":"https://files.samadada.com/movies/Raghava_Lawrence/Kanchana/Karuppu_Perazhaga_[SamaDada.Com].mp3"},
+                            "NN":{"title":"NilluNillu","URL":"https://files.samadada.com/movies/Raghava_Lawrence/Kanchana/Nillu_Nillu_Nillu_Nillu_[SamaDada.Com].mp3"},
+                            "SB":{"title":"SangliBungli","URL":"https://files.samadada.com/movies/Raghava_Lawrence/Kanchana/Sangili_Bungili_[SamaDada.Com].mp3"},
+                            "KK":{"title":"KodiyavaninKathya","URL":"https://files.samadada.com/movies/Raghava_Lawrence/Kanchana/Kodiyavanin_Kathaya_[SamaDada.Com].mp3"}
                            },
                   "Enthiran":{
                             "AA":{"title":"ArimaArima","URL":"https://naasongs.vip/links/uploads/Enthiran%2520/Arima-Arima.mp3"},
