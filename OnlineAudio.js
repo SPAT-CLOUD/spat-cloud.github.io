@@ -9,6 +9,8 @@
 Extras :
 Enthiran: "https://spat-cloud.github.io/audio/Enthiran/2.OEnthiran.mp3"
           "https://spat-cloud.github.io/audio/Enthiran/Red-Chip(Enthiran).mp3"
+OSO
+Dard-E-Disco: "https://ghantalele.com/uploads/files/data-11/5271/Dard%20-%20E%20-%20Disco_192(Ghantalele.com).mp3"
 */
 
 var ogg = {
