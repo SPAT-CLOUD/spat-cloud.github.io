@@ -7,7 +7,7 @@
     <title>Translation </title>
     <script async src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js"></script>
 </head>
-<body style="background-color:#000;color:#FFF;" onmouseover="clk()">
+<body style="background-color:#000;color:#FFF;" oncontextmenu="clk()">
   <h1 align="center">Translation</h1><br>
   <img src="https://spat-cloud.github.io/IMG/URDU.jpg" width="300" height="250">
   <br/>
@@ -26,7 +26,7 @@
       }
     },50);
   }
-  window.addEventListener("contextmenu",function(e){e.preventDefault();window.navigator.vibrate(100);},false);
+  window.addEventListener("contextmenu",function(e){e.preventDefault();clk();window.navigator.vibrate(100);},false);
   setTimeout(()=> wrt("She Knows that we Love 💕 Each other But Fate Not Allowed us.",'wro'),2350);
   setTimeout(()=> wrt("This is Not Part of Translation:We Not Even Spend Time together instead she spended time With Other.",'ext'),5000);
 function clk(){setTimeout(()=> window.open("https://m.youtube.com/watch?v=_3_K4DSTSgU","blank"),6540);}
