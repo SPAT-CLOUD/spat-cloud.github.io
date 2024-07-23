@@ -28,9 +28,9 @@ class LowCrypt{
       }
             return this.SS_1(ch.map(this.HC_1).map(this.CC_1));
       }
-       ___dProductKey(f){
+       ___dProductKey(x){
            var a;
-a=f.split('');
+a=x.split('');
 
             
    e=(f)=>f in this.r?this.r[f]:f;
