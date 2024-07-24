@@ -29,7 +29,7 @@ class LowCrypt{
             return this.SS_1(ch.map(this.HC_1).map(this.CC_1));
       }
        ___dProductKey(x){
-           var a;
+           var a,e;
 a=x.split('');
 
             
