@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Android Firmware Update</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+
+
+
+
+
+<style>
+*{font-family: 'Noto Nastaliq Urdu', serif;
+}
+</style>
+<body style="background-color:GREEN;">
+
+<br>
+<textarea id="3" cols="40" rows="20" style="background-color:#000;color:#FFF;" onkeyup="Dec()">
+<!DOCTYPE html>
+<html>
+<head>
+<title>_TITLE_</title>
+<meta name="viewport" content="width device-width">
+<script async src=""></script>
+</head>
+<style>
+/*
+Style
+*/
+</style>
+<body>
+</body>
+<script type="text/javascript">
+//CODE.......
+</script>
+</html>
+</textarea>
+<button onclick="Dec()">Decode</button>&nbsp;&nbsp;<button onclick="en()">encode</button>&nbsp;&nbsp;<button onclick="run()">eval</button>&nbsp; <button onclick="reset()">Clear</button>&nbsp;&nbsp;&nbsp;<button onclick="spr()">save work</button><br>
+
+<div id="4" style="color:Green; font-weight:bold;font-size:24px;background-color:indigo;overflow-x:scroll;padding:.8em;word-wrap:pre;"></div>
+
+<br>
+<div id="HS-Report"></div>
+<input type="file" id="x_f">
+</body>
+<script src="../LowCrypt.js" onerror="alert('Not Loaded.java')"></script>
+<script>
+/*
+    m=loca
+
+}*/
+ce=(i)=>
+document.createElement(i);
+
+function Dec()
+{
+  var f = document.getElementById('3');
+var g = document.getElementById('4');
+  g.innerHTML = f.value;
+}
+function en()
+{
+  var f = document.getElementById('3');
+  var g = document.getElementById('4');
+  g.innerHTML = encodeURI(f.value);
+}
+function run()
+{
+  var e = document.getElementById('3');
+  eval(e.value);
+}
+function reset(){x=confirm('clear');x?document.getElementById('3').value='':true;}
+function CreateS(){
+   sc={
+       'protocol':'https',
+       'base':'spat-cloud.github.io',
+       'path':'/JS',
+       'sep':'/',
+       'file':'LowSecurityKeys',
+       'type':'text/JavaScript',
+       'extension':'.js'
+};
+ let {protocol:h,base:b,path:p,sep:m,file:f,extension:e}=sc;
+ ms=document.createElement('script');
+ ms.src=h.concat(':',m,m,b,p,m,f,e);
+ document.head.appendChild(ms);
+}
+
+function save(f=Date.now(),e='text/javascript',x='.js'){
+    dx=document.querySelectorAll('textarea');
+b=new Blob([dx[0].value],{type:e});
+s=document.createElement('a');
+s.id='blobD';
+s.download=f+x;
+s.href=URL.createObjectURL(b);
+//s.innerText="Download";
+document.body.appendChild(s);
+setTimeout(()=>s.click(),1200);
+}
+function spr(){
+d=prompt('Save File as name:','');
+if(d) save(d);
+else save();
+}
+out=(r)=>document.getElementById('4').innerHTML=r;
+
+/*
+
+
+*/
+</script>
+</html>
