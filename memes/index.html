@@ -43,6 +43,18 @@
         <a href="#" id="link_m"> Brahmaandam Gif(Welcome Text) Telugu memes Test Gif</a>
       </div>
     </div>
+   <div class="mcard">
+      <img src="https://i.gifer.com/ZKZg.gif" data-src="https://media.tenor.com/ku4cDdrPB10AAAAM/brahmi-namaste.gif" width="200" height ="150" style="aspect-ratio:1/1;">
+      <div id="des">
+        <a href="#" id="link_m"> Test 2</a>
+      </div>
+   </div>
+   <div class="mcard">
+      <img src="https://i.gifer.com/ZKZg.gif" data-src="https://media.tenor.com/ku4cDdrPB10AAAAM/brahmi-namaste.gif" width="200" height ="150" style="aspect-ratio:1/1;">
+      <div id="des">
+        <a href="#" id="link_m"> Test Gif 3</a>
+      </div>
+    </div>
     
   </body>
   <script>
@@ -50,13 +62,16 @@
       var z,y,pt=String.prototype,v=navigator.appVersion,Bw=["CHROME","INSTAGRAM","SAFARI"];
       pt.up=function(){return this.toUpperCase();};
       z=$HTag('img');
-      y=(x)=>x.src=x.getAttribute('data-src');
+      y=()=>this.src=this.getAttribute('data-src');
      window.addEventListener('scroll',function(){
       Array.from(z).forEach(y);},{once:true});
       if(v.up().includes(Bw[1])){
 
         $HTag('body')[0].innerHTML=`<h1 style="color:#fff;font-weight:bold;font-size:15px;">Please Open in Chrome Browser</h1>`;
       }
+     else{
+      return;
+     }
     })();
   </script>
 </html>
