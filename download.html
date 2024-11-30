@@ -67,9 +67,11 @@ Style
   }
   else{return;}
  }
- buff.addEventListener('load', function(){
+
+buff.addEventListener('mouseover', function(){
   scanApp();
- });
+ },{once:true});
+ 
  
 ce=(i)=>
 document.createElement(i);
