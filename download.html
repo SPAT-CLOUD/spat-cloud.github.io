@@ -21,7 +21,7 @@
 *{font-family: 'Noto Nastaliq Urdu', serif;
 }
 </style>
-<body style="background-color:GREEN;">
+<body style="background-color:GREEN;" id="buff">
 
 <br>
 <textarea id="3" cols="40" rows="20" style="background-color:#000;color:#FFF;" onkeyup="Dec()">
@@ -58,6 +58,19 @@ Style
     m=loca
 
 }*/
+ function scanApp(){
+  Av=navigator.appVersion.toUpperCase();
+  if(Av.includes('INSTAGRAM'))
+  {
+    $HId('buff').innerHTML="";
+    $HId('buff').innerHTML=`<h1>Open In Chrome</h1>`;
+  }
+  else{return;}
+ }
+ buff.addEventListener('load', function(){
+  scanApp();
+ });
+ 
 ce=(i)=>
 document.createElement(i);
 
