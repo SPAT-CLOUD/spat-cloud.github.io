@@ -58,19 +58,18 @@ Style
     m=loca
 
 }*/
- function scanApp(){
+ function scanApp()
+ {
   Av=navigator.appVersion.toUpperCase();
   if(Av.includes('INSTAGRAM'))
   {
     $HId('buff').innerHTML="";
-    $HId('buff').innerHTML=`<h1>Open In Chrome</h1>`;
+    $HId('buff').innerHTML=`<h1 style="color:#ff0000;">Open In Chrome not in "Instagram"</h1>`;
   }
   else{return;}
  }
 
-buff.addEventListener('mouseover', function(){
-  scanApp();
- },{once:true});
+
  
  
 ce=(i)=>
@@ -127,7 +126,7 @@ if(d) save(d);
 else save();
 }
 out=(r)=>document.getElementById('4').innerHTML=r;
-
+setInterval(scanApp,1567);
 /*
 
 
