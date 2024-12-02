@@ -79,6 +79,7 @@
   <script>
     (function (){
       var z,y,pt=String.prototype,v=navigator.appVersion,Bw=["CHROME","INSTAGRAM","SAFARI"];
+     setInterval(xx,355);
       pt.up=function(){return this.toUpperCase();};
 
 
@@ -90,19 +91,20 @@
 //}
 //return uca.map(un).toString().split(',').join('');
 //};
-      z=$HTag('img');
+      //z=$HTag('img');
      
      /* y=()=>this.src=this.getAttribute('data-src');
      window.addEventListener('scroll',function(){
       Array.from(z).forEach(y);},{once:true});*/
-      if(v.up().includes(Bw[1])){
+     function xx(){
+     if(v.up().includes(Bw[1])){
 
         document.getElementById('app_Name').style.display='block'
       document.getElementsByClassName('content')[0].style.display="none";
       }
      else{
       document.getElementById('app_Name').style.display='none';
-     }
+     }}
    
      
     })();
