@@ -4,7 +4,7 @@
    <title>Telugu Memez and Movies</title>
    <meta name="viewport" content="width=device-width">
    <script async src="../data/HarScript/HarScript.v2.9.Latest.min.js"></script>
-  <script src="../LowSecurityKeys.js"></script>
+   
  </head>
   <style>
     *{
@@ -80,39 +80,30 @@
     (function (){
       var z,y,pt=String.prototype,v=navigator.appVersion,Bw=["CHROME","INSTAGRAM","SAFARI"];
       pt.up=function(){return this.toUpperCase();};
-     s=new LowCrypt;
-pt.rev=function(){
-return String(this.split('').reverse()).split(',').join('');
-};
-pt.rh=function(){
-f=btoa(this);
-h=s.___dhash(f);
-return h.toLowerCase().rev();
-};
-pt.uni=function(){
-uca=[];
-un=(x)=>String(x).length<4?'\\u'+'0'.repeat(4-String(x).length)+x:'\\u'+x;
-for(f=0;f<this.length;f++){
-uca.push(this.charCodeAt(f).toString(16));
-}
-return uca.map(un).toString().split(',').join('');
-};
+
+
+//pt.uni=function(){
+//uca=[];
+//un=(x)=>String(x).length<4?'\\u'+'0'.repeat(4-String(x).length)+x:'\\u'+x;
+//for(f=0;f<this.length;f++){
+//uca.push(this.charCodeAt(f).toString(16));
+//}
+//return uca.map(un).toString().split(',').join('');
+//};
       z=$HTag('img');
      
-      y=()=>this.src=this.getAttribute('data-src');
+     /* y=()=>this.src=this.getAttribute('data-src');
      window.addEventListener('scroll',function(){
-      Array.from(z).forEach(y);},{once:true});
+      Array.from(z).forEach(y);},{once:true});*/
       if(v.up().includes(Bw[1])){
 
-        $HShow('app_Name');
+        document.getElementById('app_Name').style.display='block'
       document.getElementsByClassName('content')[0].style.display="none";
       }
      else{
-      $HVanish('app_Name');
+      document.getElementById('app_Name').style.display='none';
      }
-   /*  fetch("a3a345b29354153293a3")
-     .then(f=>f.json())
-     .then*/
+   
      
     })();
   </script>
