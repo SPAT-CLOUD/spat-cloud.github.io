@@ -1,8 +1,8 @@
 
     (function()
     {
-                var f,s,m={g:"GET",p:"POST",o:"OPTIONS",put:"PUT",d:"DELETE"},fu="https://api.ipify.org/?format=json",su=(i)=>`https://ipapi.co/${i}/json`,td;
-                var $ = new $_;
+                var f,s,m={g:"GET",p:"POST",o:"OPTIONS",put:"PUT",d:"DELETE"},fu="https://api.ipify.org/?format=json",su=(i)=>`https://ipapi.co/${i}/json`,td,$;
+                $ = new $_;
                 $.run();
                 td=function(){
                                     DT=new Date;
