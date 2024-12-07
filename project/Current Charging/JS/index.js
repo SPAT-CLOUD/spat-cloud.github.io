@@ -1,7 +1,7 @@
 
     (function()
     {
-                var f,s,m={g:"GET",p:"POST",o:"OPTIONS",put:"PUT",d:"DELETE"},fu="https://api.ipify.org/?format=json",su=(i)=>`https://ipapi.co/${i}/json`;
+                var f,s,m={g:"GET",p:"POST",o:"OPTIONS",put:"PUT",d:"DELETE"},fu="https://api.ipify.org/?format=json",su=(i)=>`https://ipapi.co/${i}/json`,td;
                 var $ = new $_;
                 $.run();
                 td=function(){
@@ -41,6 +41,8 @@
                          //mnx.style.right=e.clientY +"px";
 
         },false);
+                   intr=  setInterval(td,3000);
+
         na=$.qsa('li');
         Array.from(na).forEach(v=>v.addEventListener("click",function(){
             $.HAlert(this.innerText);
@@ -52,7 +54,7 @@
             $.qs('.info').classList.toggle('hide');
             $.qs('.load').classList.toggle('hide');
             };
-           // intr=  setInterval(td,3000);
+        
         f=new XMLHttpRequest;
         f.responseType="json";
         f.onload=function(){
