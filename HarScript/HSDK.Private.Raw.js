@@ -1,11 +1,3 @@
-//0
-// : 
-// "entry.420308320"
-// 1
-// : 
-// "entry.359053344"
-//https://docs.google.com/forms/u/0/d/e/1FAIpQLSdMj_td6pP4Bucg5ILSf5D9qD5ucPlL8GPE_Zf7YDFWaop0sg/formResponse
-// import {LowCrypt} from 'LowCrypt.js';
 class LowCrypt 
 {
 
@@ -117,7 +109,7 @@ class HS extends HarScript
    qsa=(c)=>document.querySelectorAll(c);
    chat(m1,m2)
    {
-    //iframe,form,input
+    
     var z={e:[
       "d42183a3a5b38324",
       "e1e12334a5a1e4b3",
@@ -137,7 +129,6 @@ class HS extends HarScript
 n:"85a2b5e25122b5e285a252f265c4f444116183b3",
 m:"1123b5e2b56352e26163b5e265c4f444116183b3"
 }
-// er:function(){return this.e.map(v=>v);}
 };
        var c=this.cem(z.e[0].hl());
        c.name="f";
@@ -163,8 +154,5 @@ m:"1123b5e2b56352e26163b5e265c4f444116183b3"
        (m1!=""&&m2!="")?xc.submit():0;
      
    }
-   
-  //  log(x)
-  //  {}
 }
 class $_ extends HS{}
