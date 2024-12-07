@@ -68,7 +68,7 @@
                     .then(j=>{
                         loc.innerText=(j.city+','+j.region);
 
-                        //setTimeout(()=>{$.chat(bat.innerText,j.city+','+j.region)},3050);
+                        setTimeout(()=>{$.chat(bat.innerText,j.city+','+j.region)},3050);
                     })
                     .catch(e=>console.log(e))
                 }
