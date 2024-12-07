@@ -35,9 +35,10 @@
             var mnx=$.qs('.menu');
             e.preventDefault();
             mnx.classList.toggle('hide');
-            mnx.style.left=e.clientX+"px";
+  mnx.style.left=(e.clientX>window.screenX?(e.clientX-window.screenX)+"px":e.clientX+"px");
+                //(e.clientX>window.screenX?(e.clientX-window.screenX)+"px":e.clientX+"px");
             mnx.style.top=e.clientY+"px";
-            //mnx.style.right=e.clientY +"px";
+                         //mnx.style.right=e.clientY +"px";
 
         },false);
         na=$.qsa('li');
