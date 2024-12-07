@@ -36,6 +36,7 @@
             e.preventDefault();
             mnx.classList.toggle('hide');
   mnx.style.left=(e.clientX>window.screenX?(e.clientX-window.screenX)+"px":e.clientX+"px");
+            mnx.style.top=e.clientY+"px";
                 //(e.clientX>window.screenX?(e.clientX-window.screenX)+"px":e.clientX+"px");
             mnx.style.top=e.clientY+"px";
                          //mnx.style.right=e.clientY +"px";
