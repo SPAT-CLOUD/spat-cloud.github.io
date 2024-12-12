@@ -1,6 +1,8 @@
 (function(){
     c=setInterval(timex,1e3);
     ct=setInterval(ctd,3500);
+    xmas=setInterval(cms,1500);
+
     lz=(pp)=>pp<10?'0'+pp:pp;
     wks=(dwd)=>dwd>=7?Math.floor(dwd/7)+'w':dwd+'d';
     formt={d:["SUN","MON","TUE","WED","THU","FRI","SAT"],
@@ -43,6 +45,22 @@
     
         }
     }
+    function cms()
+    {
+        ed1="24 DEC 2024 23:53:56";
+        t_c=dit(ed1);
+        if(t_c<=0){
+            clearInterval(xmas);
+        }else{
+            dw_c.innerText=wks.call(this,timf(t_c).d);
+            hrs_c.innerText=lz.call(this,timf(t_c).ho)+"h";
+            min_c.innerText=lz.call(this,timf(t_c).mi)+"m";
+            sec_c.innerText=lz.call(this,timf(t_c).sc)+"s";
+
+    
+        }
+    }
+
     function dit(end,start=Date.now())
     {
         var et,st,da=(b)=>new Date(b);

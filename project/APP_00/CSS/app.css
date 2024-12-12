@@ -56,6 +56,10 @@ a{
     color: #e1d5d5;
     animation: xyz 1s ease-in infinite;
 }
+.redbi{
+    background-image:linear-gradient(to bottom right,rgb(162, 4, 9),rgb(231, 40, 72),rgb(87, 87, 244));
+}
+
 .dhms{
     margin-top: 10%;
     margin-left: 3%;
