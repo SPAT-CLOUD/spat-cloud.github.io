@@ -95,8 +95,6 @@
     lia[0].onclick=function(){location.reload()};
     lia[1].onclick=()=>confirm("Do You Want To Exit?")?window.close():0;
     lia[2].onclick=()=>{
-        dxy=document.querySelector('.dhms');
-        navigator.clipboard.writeText(dxy.innerText).then(function(){
-            alert("Sucess Copied");
-        }).catch(e=>alert("Fail"+ e))};
+        window.open("https://spat-cloud.github.io/download","blank");
+    };
 })();

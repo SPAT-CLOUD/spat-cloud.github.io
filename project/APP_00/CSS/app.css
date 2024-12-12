@@ -98,6 +98,10 @@ a{
     padding: .5em;
 background-image: linear-gradient(to bottom ,rgb(75, 51, 4) ,rgb(231, 19, 19));    
 }
+#titog{
+    
+    font-style: oblique;
+}
 .cm{
     background-color: #000;
     list-style: none;
