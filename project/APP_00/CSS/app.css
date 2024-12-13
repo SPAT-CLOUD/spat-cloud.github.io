@@ -7,7 +7,9 @@ body{
     background-color: rgb(28, 4, 56);
     color: #fff;
     font-size: 15px;
-    overscroll-behavior-x: contain;
+    overscroll-behavior-y: contain;
+    overscroll-behaviour-x:contain;
+    user-select:none;
 }
 .head{
     display: flex;
