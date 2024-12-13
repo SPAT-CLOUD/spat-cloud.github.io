@@ -16,7 +16,7 @@
         gm=formt.m[doj.getMonth()];
         gdt=lz(doj.getDate());
         gy=doj.getFullYear();
-        tf=gh>=12?gh-12:gh;
+        tf=gh>12?gh-12:gh;
         mr=tf>=12?'PM':'AM';
         ti.innerText=`${tf}:${gmn} ${mr}`;
         dt.innerText=`${gdt} ${gm} ${gy}`;
