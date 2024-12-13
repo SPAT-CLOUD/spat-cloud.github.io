@@ -19,7 +19,7 @@
                             d:["SUN","MON","TUE","WED","THU","FRI","SAT"]
                         };
                             lz=(c)=>c<10?'0'+c:c;
-                            tf=(v)=>v>=12?v-12:v;
+                            tf=(v)=>v>12?v-12:v;
                             mr=(p)=>p>=12?'PM':'AM';
             
                             H=DT.getHours();
