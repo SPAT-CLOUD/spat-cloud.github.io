@@ -4,7 +4,7 @@
                 var f,s,m={g:"GET",p:"POST",o:"OPTIONS",put:"PUT",d:"DELETE"},fu="https://api.ipify.org/?format=json",su=(i)=>`https://ipapi.co/${i}/json`,td,$;
                 $ = new $_;
                 $.run();
-        setInterval(td,2500);
+        
                 td=function(){
                                     DT=new Date;
                                     //var cl=$.qs('#bat'),tm=$.qs('#timer'),da=$.qs('#dt');
@@ -32,6 +32,7 @@
                             dt.innerText=`${DT.getDate()} ${MN} ${Y},${D}`;
                             timer.innerText=`${tf(H)}:${M} ${MR}`;
         };
+        wi=setInterval(td,2500);
         document.addEventListener("contextmenu",function(e){
             var mnx=$.qs('.menu');
             e.preventDefault();
@@ -50,7 +51,7 @@
             $.HAlert(this.innerText);
         },false));
         document.addEventListener("click",function(){
-            $.qs('.menu').classList.toggle('hide');
+            $.qs('.menu').classList.remove('hide');
         },false);
         $.qs('.load').onanimationend=()=>{
             $.qs('.info').classList.toggle('hide');
