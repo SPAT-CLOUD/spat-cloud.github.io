@@ -5,14 +5,7 @@
     xmas=setInterval(cms,1500);
     
     },{once:true});
-document.addEventListener("mouseover",function(){
 
-    navigator.getBattery()
-        .then(c=>{
-            bpr.innerText=Math.floor(c.level*100)+"%";
-            //c.charging?bpr.style.color="#ff0000":bpr.style.color='#fff';
-        }).catch(e=>bpr.innerText=e)
-},{once:true});
     lz=(pp)=>pp<10?'0'+pp:pp;
     wks=(dwd)=>dwd>=7?Math.floor(dwd/7)+'w':dwd+'d';
     formt={d:["SUN","MON","TUE","WED","THU","FRI","SAT"],
