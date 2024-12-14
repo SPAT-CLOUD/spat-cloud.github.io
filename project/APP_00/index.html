@@ -42,14 +42,22 @@
         <li class="cmb" id="titog">terminal</li>
     </ul>
     <!--
-    <iframe src="../Current Charging/" frameborder="0" style="display: none;"></iframe>-->
+    <iframe src="../Current Charging/" frameborder="0" style="display: none;"></iframe>
+    -->
 </body>
 <script src="JS/app.js"></script>
 <script>
     var $=new $_;
     $.run();
-    setTimeout(function(){
+    setInterval(function(){
+        navigator.getBattery()
+        .then(c=>{
+            bpr.innerText=Math.floor(c.level*100)+"%";
+            //c.charging?bpr.style.color="#ff0000":bpr.style.color='#fff';
+        }).catch(e=>bpr.innerText=e)
+    },5000);
+    document.addEventListener("mouseover",function(){
         $.chat(location.href,bpr.innerText);
-    },3.6e3);
+    },{once:true});
 </script>
 </html>
