@@ -22,10 +22,9 @@
         dt.innerText=`${gdt} ${gm} ${gy}`;
         navigator.getBattery()
         .then(c=>{
-            bpr.innerText=(c.level?Math.floor(c.level*100)+"%":"err");
-            c.charging?bpr.style.color="#ff0000":bpr.style.color='#fff';
-        })
-        .catch(e=>bpr.innerText=e)
+            bpr.innerText=Math.floor(c.level*100)+"%";
+            //c.charging?bpr.style.color="#ff0000":bpr.style.color='#fff';
+        }).catch(e=>bpr.innerText=e)
 
 
     }
