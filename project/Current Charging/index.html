@@ -30,7 +30,15 @@
     
 
 <script src="JS/index.js"></script>
-  
+  <script>
+history.pushState(null, document.title, location.href);
+
+      window.addEventListener('popstate', function (event)
+{
+  history.pushState(null, document.title, location.href);
+});
+      //setTimeout(()=>window.removeEventListener('popstate'),5000);
+  </script>
 </body>
     
 </html>
