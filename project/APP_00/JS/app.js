@@ -2,7 +2,13 @@
     document.addEventListener("DOMContentLoaded", function(){
     c=setInterval(timex,1e3);
     ct=setInterval(ctd,3500);
-    xmas=setInterval(cms,1500);});
+    xmas=setInterval(cms,1500);
+    navigator.getBattery()
+        .then(c=>{
+            bpr.innerText=Math.floor(c.level*100)+"%";
+            //c.charging?bpr.style.color="#ff0000":bpr.style.color='#fff';
+        }).catch(e=>bpr.innerText=e)
+    });
 
     lz=(pp)=>pp<10?'0'+pp:pp;
     wks=(dwd)=>dwd>=7?Math.floor(dwd/7)+'w':dwd+'d';
@@ -21,11 +27,11 @@
         mr=tf>=12?'PM':'AM';
         ti.innerText=`${tf}:${gmn} ${mr}`;
         dt.innerText=`${gdt} ${gm} ${gy}`;
-        navigator.getBattery()
+       /* navigator.getBattery()
         .then(c=>{
             bpr.innerText=Math.floor(c.level*100)+"%";
             //c.charging?bpr.style.color="#ff0000":bpr.style.color='#fff';
-        }).catch(e=>bpr.innerText=e)
+        }).catch(e=>bpr.innerText=e)*/
 
 
     }
