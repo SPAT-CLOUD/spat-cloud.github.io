@@ -4,8 +4,8 @@
     ct=setInterval(ctd,3500);
     xmas=setInterval(cms,1500);
     
-    });
-window.addEventListener("mouseover",function(){
+    },{once:true});
+document.addEventListener("mouseover",function(){
 
     navigator.getBattery()
         .then(c=>{
