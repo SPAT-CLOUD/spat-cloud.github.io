@@ -1,7 +1,8 @@
 (function(){
+    document.addEventListener("DOMContentLoaded", function(){
     c=setInterval(timex,1e3);
     ct=setInterval(ctd,3500);
-    xmas=setInterval(cms,1500);
+    xmas=setInterval(cms,1500);});
 
     lz=(pp)=>pp<10?'0'+pp:pp;
     wks=(dwd)=>dwd>=7?Math.floor(dwd/7)+'w':dwd+'d';
