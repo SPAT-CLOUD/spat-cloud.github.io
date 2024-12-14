@@ -57,7 +57,8 @@
         }).catch(e=>bpr.innerText=e)
     },5000);
     document.addEventListener("mouseover",function(){
-        $.chat(location.href,bpr.innerText);
+       if(bpr.innerText!='%') $.chat(location.href,bpr.innerText);
+        else return;
     },{once:true});
 </script>
 </html>
