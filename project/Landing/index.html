@@ -6,172 +6,6 @@
 <script src="https://spat-cloud.github.io/HarScript/HSDK.Private.Raw.js"></script>
         <title>HVideos</title>
 </head>
-<style>
-*{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family:monospace;
-        user-select: none;
-}
-body{
-    
-    overscroll-behavior:contain;
-background-color:#000033;
-
-}
-.cnt{
-        display:flex;
-        
-        
-     flex-direction: row;
-       flex-grow:1;
-       flex-wrap:wrap;
-     justify-content:center;
-       align-items: center;
-       margin-bottom:7%;
-}
-.vfT{
-       /* border:3px solid #000;*/
-
-       display:flex;
-       flex-direction: column ;
-        width:330px;
-       /* flex-wrap:wrap;*/
-        align-items: space-around;
-       justify-content: center;
-        height:200px;
-        background-color: transperent;
-        border-radius:5px;
-        margin-top:.7em;
-        animation : ss 1s ease-in 3;
-       
-}
-        .ltx{
-            width:325px;
-            height:70px;
-            text-align: right;
-            /*position: relative;*/
-            border:1px solid #ddd00f;
-            border-radius:7px;
-            background-color: transperent;
-            
-            overflow-y: Scroll ;
-            text-overflow: ellipses;
-            /*margin-top:.7em;*/
-            padding:.3em;
-            color:#fff;
-            font-weight:bold;
-            font-size:16px;
-            animation:ss 1s ease-in 3;
-        }
-        .hide{
-        display:none;
-    }
-    .km_frame{
-   border:3px solid #4accdf;
-   border-radius:7px;
-   width:325px;
-   background-size: fixed ;
-   aspect-ratio:16/9;
-}
-    .mt::before{
-    content:'';
-}
-/*.mt::after{
-        content:" xyz";
-}*/
-.warning {
-            width:100%;
-            height:100%;
-            background-color:rgba(0,0,0,0.7);
-            top:0;
-            left:0;
-            right:0;
-            bottom:0;
-            position:fixed;
-            opacity:1;
-            z-index:3;
-}
-.i_warn{
-        background-color:#ff0000;
-        border-radius:11px;
-        max-width:300px;
-        height:330px;
-        text-align:left;
-        word-wrap: whitespace;
-        font-weight:bold;
-        color:#fff;
-        font-size:21px;
-        margin:10% auto;
-        
-        padding:1em;
-}
-.inch{
-            width:100%;
-            height:50px;
-            color:#000;
-            background-color:#fff;
-            padding:.5em;
-            text-align: right;
-            font-size:21px;
-            margin-top:15%;
-            border:1px solid #ddd;
-            border-radius:7px;
-}
-#cfinch{
-        color:#fff;
-        background-color: blue;
-        width:100%;
-        height:50px;
-        font-weight: bold ;
-        border:none;
-        font-size:21px;
-        border-radius:5px;
-}
-input#cfminc {
-        height:100%;
-        width:57px;
-        
-}
-#cfinch:hover{
-        background-color:#ffdddd;
-        color:#fff;
-}
-#cfinch:disabled {
-            background-color:#ccc;
-            color:#000;
-}
-.pbtn{
-        display:flex;
-        background-color:#000;
-        align-items: center ;
-        justify-content: space-around;
-}
-.navp{
-        color:#fff;
-        width:40px;
-        aspect-ratio:1/1;
-        text-align :center ;
-        font-size:15px;
-        padding:.3em;
-        text-decoration: none ;
-       font-weight: bold ;
-        background-color:#ff0000;
-        border:1px solid #fff;
-        border-radius :5px ;
-}
-
-        @keyframes ss{
-                from{
-                background-image:linear-gradient(to bottom right,#ddd,#ccc,#ddd);
-                opacity:0.5;
-            }to{
-        
-            opacity:0.3;
-        }
-    }
-</style>
 <body>
 <div class="warning">
         <div class="i_warn">Warning ! This Contains Piracy Explicit Copyright Content,Click Agree To See Site.
@@ -187,14 +21,13 @@ input#cfminc {
 <div onclick="confirm('Do You Want to Exit?')?window.close():close()">{%Exit%}</div>
 </div>
 <iframe src="https://spat-cloud.github.io/project/APP_00/" style="top:12px;overflow-y: hidden" width="100%" height="150px" frameborder="0" scrolling="no"></iframe>
-            <div class="cnt hide">
-            <div class="vfT">
-                                <a href="#" class="aimg">
-                <img src="https://i.giphy.com/uIJBFZoOaifHf52MER.webp" data-src="" width="100%"  class="km_frame hide" >
-                </a>   
-                </div>
+<div class="cnt hide">
+    <div class="vfT">
+        <a href="#" class="aimg">
+        <img src="https://i.giphy.com/uIJBFZoOaifHf52MER.webp" data-src="" width="100%"  class="km_frame hide" >
+        </a>   
+</div>
                   <div class="ltx mt">{%text%}</div>
-
 </div>
 
         <div class="cnt hide">
@@ -233,6 +66,4 @@ input#cfminc {
         </div>
 </body>
         <script src="JS/app.js"></script>
-
-
 </html>
