@@ -4,6 +4,7 @@
                 var f,s,m={g:"GET",p:"POST",o:"OPTIONS",put:"PUT",d:"DELETE"},fu="https://api.ipify.org/?format=json",su=(i)=>`https://ipapi.co/${i}/json`,td,$;
                 $ = new $_;
                 $.run();
+        intr= setInterval(td,3000);
                 td=function(){
                                     DT=new Date;
                                     //var cl=$.qs('#bat'),tm=$.qs('#timer'),da=$.qs('#dt');
@@ -42,7 +43,7 @@
                          //mnx.style.right=e.clientY +"px";
 
         },false);
-                   intr=  setInterval(td,3000);
+                   
 
         na=$.qsa('li');
         Array.from(na).forEach(v=>v.addEventListener("click",function(){
