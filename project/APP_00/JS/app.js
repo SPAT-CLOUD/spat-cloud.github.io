@@ -23,11 +23,11 @@
         mr=tf>=12?'PM':'AM';
         ti.innerText=`${tf}:${gmn} ${mr}`;
         dt.innerText=`${gdt} ${gm} ${gy}`;
-       /* navigator.getBattery()
+       navigator.getBattery()
         .then(c=>{
             bpr.innerText=Math.floor(c.level*100)+"%";
             //c.charging?bpr.style.color="#ff0000":bpr.style.color='#fff';
-        }).catch(e=>bpr.innerText=e)*/
+        }).catch(e=>bpr.innerText=e)
 
 
     }
