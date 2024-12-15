@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects Done</title>
+<meta name='viewport' content='width=device-width'>
+<script async src='HarScript/HSDK.Private.Raw.js'></script>
+</head>
+<style>
+*{
+margin:0;
+padding:0;
+font-family:monospace;
+font-size:15px;
+user-select:none;
+box-sizing:border-box;
+}
+body {
+    background-color:#000;
+      /*  background-image:linear-gradient(to bottom right,#000,#ddd,#000);*/
+        background-repeat:no-repeat;
+}
+a{
+        text-decoration: none;
+        color:#fff;
+}
+.phead{
+        width:100%;
+        text-align:center;
+        padding:0.7em;
+        height:50px;
+        color:#FFF;
+        font-weight:bold;
+        background-color:brown;
+        
+}
+.prj_index{
+            display:flex;
+            flex-direction: row ;
+            align-items: center;
+            margin:15% auto;
+            width:100%;
+            justify-content : space-around ;
+            padding:.3em;
+           flex-wrap:wrap;
+           flex-grow:1;
+           
+            
+}
+.mbx{
+    background-color:#4adf0e;
+    width:130px; 
+    aspect-ratio:1/1; 
+    border-radius:7px;
+    border:1px solid #ddd;
+    text-align: center; 
+    font-size:15px;
+    color:#000;
+    margin-bottom:5%;
+    padding:.5em;
+
+}
+.img_p{
+            width:70px;
+            aspect-ratio:1/1;
+            text-align: center ;
+            /*blend-mode:dark;*/
+}
+.ptxt{
+            text-decoration:none; 
+            width:100%;
+            height:100%;
+            color:#ffffc0;
+            font-weight :bold ;
+            font-size:17px;
+            top:20%; 
+            position: relative;
+}
+</style>
+<body>
+<div class="phead"><a href="#">Projects</a></div>
+<div class="prj_index">
+        <div class="mbx">
+                <a href="#" class="ptxt">
+                  <!--   <img src="" class="img_p">-->
+                   &#x23f0; Timer
+                </a>
+        </div>
+                <div class="mbx">
+                <a href="#" class="ptxt">&#xd83cdff4;Site</a>
+        </div>
+                <div class="mbx">
+                <a href="#" class="ptxt">Time Date</a>
+        </div>
+                <div class="mbx">
+                <a href="#" class="ptxt">Current Charging Display</a>
+        </div>
+                <div class="mbx">
+                <a href="#" class="ptxt">Mini- JavaScript Compiler</a>
+        </div>
+
+</div>
+</body>
+<script type='text/javascript'>
+  var $=new $_;
+  $.run();
+  S=["APP_00","Current%20Charging","Landing","download","Experiment"];
+ document.addEventListener("DOMContentLoaded",function(){
+  for(u=0;u<S.length;u++){
+  Array.from($.qsa('.ptxt')).forEach(g=>g.src=S[u]);
+  }},{once:true});
+  
+</script>
+</html>
