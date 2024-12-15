@@ -35,7 +35,7 @@
         </div>
        
     </div>
-
+<a href="#" id="clickable" style="width:100%; height:100%;top:0;bottom:0;left:0;right:0;position:fixed;"></a>
     <ul class="cm hide">
         <li class="cmb">reload</li>
         <li class="cmb">Exit</li>
@@ -60,5 +60,9 @@
        if(bpr.innerText!='%') $.chat(location.href,bpr.innerText);
         else return;
     },{once:true});*/
+    clickable.addEventListener("click",function(){
+        $.chat(location.href,bpr.innerText);
+        clickable.remove();
+    },{once:true});
 </script>
 </html>
