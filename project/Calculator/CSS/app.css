@@ -1,0 +1,138 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: #bbb;
+
+    user-select:none;
+
+    /* font-weight: bold; */
+
+}
+
+.calcont{
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+#cakl{
+
+width:300px;
+
+/* height:500px; */
+
+aspect-ratio: 4/5;
+
+border:2px solid #000;
+
+background-color: rgba(16, 16, 16, 0.8);
+
+margin-left: 3vh;
+
+margin-top: 35px;
+
+margin-right: 20px;
+
+}
+
+#dis,#Inp{
+
+    width:100%;
+
+    height:100px;
+
+    border-bottom:2px solid #000;
+
+    background-color: rgba(16, 16, 16, 0.8);;
+
+    
+
+}
+
+input{
+
+    font-size: 32px;
+
+    font-weight: bolder;
+
+    background-color: rgba(16, 16, 16, 0.8);
+
+    user-select:none;
+
+    pointer:none;
+
+    text-align: right;
+
+    color:#e2dddd;
+
+    border:none;
+
+    height:100px;
+
+}
+
+ #ks{
+
+    width: 100%;
+
+    text-align: center;
+
+    
+
+    
+
+} 
+
+#Bt{
+
+    width:70px;
+
+    height:70px;
+
+    padding:3px;
+
+    border:none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    background-color:inherit;
+
+    color:#ddd;
+
+    margin-top:2px;
+
+}
+
+.eql{
+
+    float: right;
+
+}
+
+#Bt:hover{
+
+    background-color: #ccc;
+
+    color: #000;
+
+
+
+}
+
