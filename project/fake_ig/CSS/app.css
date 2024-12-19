@@ -1,0 +1,95 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+}
+@media (prefers-color-scheme: light) {
+  body 
+  {
+    background: #FFF;
+    color: #333;
+  }
+  .txt-p
+  {
+  color:#000;
+}
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: #FFF;
+  }
+  .txt-p{
+  color:#fff;
+}
+}
+  /*  body{
+        background-color: #000;
+
+    }*/
+    .topfl{
+       /* background-color: #0a0101;*/
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        padding: .5em;
+        border:1px solid #ccc;
+    }
+    .txt-p{
+        
+        text-decoration: none;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .profile-photo{
+        width: 70px;
+        aspect-ratio: 1/1;
+        /* float: left;
+        margin-left:1%;
+        margin-top: 3%; */
+        /* padding: inherit; */
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+   
+    .bio-t{
+        /*color: #fff;*/
+        list-style: none;
+        margin-top: 1%;
+        width:100%;
+        height: fit-content;
+        border: 1px solid #fff;
+
+        padding: .9em;
+    }
+    li.ctx{
+        font-size: 20px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .bio-t > :nth-child(1){
+        font-weight: bold;
+    }
+    .bio-t>:nth-child(2){
+        white-space: wrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .midl{
+        width:100%;
+       background-color: #4e79ed;
+        font-weight: bold;
+        border-radius:7px;
+       color: #fff;
+        font-size: 15px;
+        /*border: 1px solid wheat;*/
+        margin-top: 1%;
+        text-align: center;
+        padding: .5em;
+    }
+    
