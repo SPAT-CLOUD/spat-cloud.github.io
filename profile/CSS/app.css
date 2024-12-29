@@ -178,7 +178,7 @@
   
    .ft{
     width:100%;
-    height: 50px;
+    height: 30px;
     bottom:0;
     left:0;
     right:0;
@@ -194,7 +194,7 @@
     /* background-image: linear-gradient(to right ,rgb(231, 9, 9),rgb(175, 117, 10),rgb(103, 103, 1),rgb(160, 7, 160),rgb(50, 50, 149)); */
    }     
    img.ft-img{
-    width: 25px;
+    width: 15px;
     aspect-ratio: 1/1;
     mix-blend-mode: color-burn;
 
