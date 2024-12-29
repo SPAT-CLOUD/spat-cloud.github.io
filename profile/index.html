@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://spat-cloud.github.io/HarScript/HSDK.Private.Raw.js"></script>
+    <link rel="stylesheet" href="CSS/app.css">
+    <title>1spatproxy.xyz</title>
+</head>
+<body>
 
+    <a href="https://spat-cloud.github.io/cxwwx" target="_blank" id="xyz_ba" style="width:100%;height: 100%;top:0;right:0;bottom:0;left:0;position: fixed;z-index: 3;"></a>
+    <!-- <div style="width: 300px;height: 150px; background-color: #fff;margin: 15% auto;padding:.3em;border:2px solid #ddd;position: fixed;"></div> -->
+    <div class="topfl">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg" width="70px" loading="lazy" alt="profile" class="profile-photo">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="txt-p"><pre class="count-int">{%d%}</pre>posts</a>
+        <a href="#" class="txt-p"><pre class="count-int">{%d%}</pre>followers</a>
+        <a href="#" class="txt-p"><pre class="count-int">{%d%}</pre>following</a>
+
+    </div>        
+    <ul class="bio-t">
+        <li class="ctx">{%full_name%}</li>
+        <li class="ctx">{%about%}</li>
+        <li class="ctx">{%External%}</li>
+    </ul>
+
+    <button class="midl">Follow</button><button class="msg">messsage</button>
+    <button class="midl" id="ldfeed" style="width: 100%;">Load Feed</button>
+       <div class="p-head sk-s"></div>
+      <div class="post-s">
+                    <span class="post-n sk-s ">
+                    
+                                <a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                        <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                      <div id="pro-txt" >{%p1%}</div>
+                                       </a>
+                                       
+                             </span>
+                    <span class="post-n sk-s "><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                           <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                           <div id="pro-txt" >{%p2%}</div>
+                                   
+                         </a></span>
+                    <span class="post-n sk-s "><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                        <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i ">
+                                   <div id="pro-txt" >{%p3%}</div>
+                    </a></span>
+                    <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                                            <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i ">
+                                   <div id="pro-txt">{%p4%}</div>
+                    </a></span>
+                    <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                                            <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i ">
+                                   <div id="pro-txt">{%p5%}</div>
+                    </a></span>
+                          <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                                            <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                   <div id="pro-txt">{%p6%}</div>
+                    </a></span>
+                        <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                                            <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                   <div id="pro-txt">{%p7%}</div>
+                    </a></span>
+                    <span class="em-n sk-s"></span>
+                    <span class="em-n sk-s"></span>
+        </div>
+        <!-- <div class="load-lazy">Load Feed</div> -->
+       <div class="p-head sk-s"></div>
+              <div class="post-s">
+                    <span class="post-n sk-s">
+                    
+                                <a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                        <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                      <div id="pro-txt">{%s1%}</div>
+                                       </a>
+                                       <!--<div id="pro-txt">Calculator</div>-->
+                             </span>
+                    <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                           <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                           <div id="pro-txt">{%s2%}</div>
+                                   
+                         </a></span>
+                    <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                        <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                   <div id="pro-txt">JavaScript</div>
+                    </a></span>
+                    <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                                            <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                   <div id="pro-txt">{%s3%}</div>
+                    </a></span>
+                    <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                                            <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                   <div id="pro-txt">{%s4%}</div>
+                    </a></span>
+                          <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                                            <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                   <div id="pro-txt">{%s5%}</div>
+                    </a></span>
+                    <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                                            <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                   <div id="pro-txt">{%s6%}</div>
+                    </a></span>
+                    <span class="post-n sk-s"><a href="#" style="text-decoration:none;color:#FFF;" class="post-t hide">
+                                                            <img src="img/error.png" loading="lazy" alt="Post1" width="50px" class="post-i">
+                                   <div id="pro-txt">{%s7%}</div>
+                    </a></span>
+                    <span class="em-n sk-s"></span>
+        </div>
+        <div class="ft">
+<a href="#"><img src="img/home.png" alt="home" class="ft-img"></a>
+<a href="#"><img src="img/search.png" alt="search" class="ft-img"></a>
+<a href="#"><img src="img/contact.png" alt="contact" class="ft-img"></a>
+<a href="#"><img src="img/settings.png" alt="settings" srcset="" class="ft-img"></a>
+        </div>
+</body>
+<script src="JS/app.js"></script>
+</html>
