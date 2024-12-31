@@ -65,7 +65,7 @@
                 getAd();
                 rmsks();
                 this.remove();
-                ldfeed.remove();
+                $.qs('.bxy').remove();
             },{once:true});      
 
 })();
