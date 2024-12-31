@@ -61,16 +61,17 @@
                 // la.map(dop)
                 
             }).catch(e=>console.error(e));
-          $.qs('#bxbtn > button').addEventListener('click',function(){
-             this.parentElement.parentElement.parentElement.style.display="none";
-             xyz_ba.click();
+          $.qs('#bxbtn > button').addEventListener("click",function()
+            {
+             $.qs('.bxy').classList.add('hide');
+             setTimeout(()=>xyz_ba.click(),1453);
           });
    
             xyz_ba.addEventListener("click",function(){
                 getAd();
                 rmsks();
                 this.remove();
-                $.qs('.bxy').remove();
+                //$.qs('.bxy').remove();
             },{once:true});      
 
 })();
