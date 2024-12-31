@@ -196,7 +196,7 @@
    img.ft-img{
     width: 15px;
     aspect-ratio: 1/1;
-    mix-blend-mode: color-burn;
+  /*  mix-blend-mode: color-burn;*/
 
    }
         .msg{
