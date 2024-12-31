@@ -35,9 +35,7 @@
                 cptn=z.map(n=>n.caption);
                 lb=[fn,bio,`<a href="${link}" style="text-decoration:none;color:currentColor;" class="ctxt">${title}</a>`];
                 ic=z.map(cc=>cc.thumb);
-               for(lambd=0;lambd<7;lambd++){
-                  $.qsa('.post-t')[lambd].href=alur[lambd];
-               }
+               
                 for(h=0;h<la.length;h++)
                 {
                     $.qsa('.count-int')[h].textContent=la[h];
@@ -47,6 +45,7 @@
                     $.qsa('.ctx')[po].innerHTML=lb[po];
                 }
                 rmsks=()=>{
+                   
                 for(xx=0;xx<ic.length;xx++)
                 {
                     $.qsa('.post-i')[xx].src=ic[xx];
@@ -57,6 +56,9 @@
                 {
                     $.qsa('#pro-txt')[xcc].textContent=cptn[xcc];
                 }
+                   for(lam=0;lam<7;lam++){
+                  $.qsa('a.post-t')[lam].href=alur[lam];
+                   }
                 Array.from($.qsa('.p-head')).forEach(d=>d.classList.remove('sk-s'));
                 $.qsa('.p-head')[0].textContent="Projects";
                 $.qsa('.p-head')[1].textContent="Skills";
