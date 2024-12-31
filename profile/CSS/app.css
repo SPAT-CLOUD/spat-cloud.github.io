@@ -41,6 +41,7 @@
         width: 70px;
         aspect-ratio: 1/1;
         object-fit: cover;
+       filter:blur(7px);
         /* float: left;
         margin-left:1%;
         margin-top: 3%; */
