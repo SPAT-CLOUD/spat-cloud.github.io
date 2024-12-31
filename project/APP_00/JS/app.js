@@ -53,6 +53,7 @@
         t_c=dit(ed1);
         if(t_c<=0){
             clearInterval(xmas);
+            document.querySelector('.redbi').style.display="none";
         }else{
             dw_c.innerText=wks.call(this,timf(t_c).d);
             hrs_c.innerText=lz.call(this,timf(t_c).ho)+"h";
