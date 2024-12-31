@@ -35,7 +35,7 @@
                 cptn=z.map(n=>n.caption);
                 lb=[fn,bio,`<a href="${link}" style="text-decoration:none;color:currentColor;" class="ctxt">${title}</a>`];
                 ic=z.map(cc=>cc.thumb);
-               for(lambd=0;lambd>pc;lambd++){
+               for(lambd=0;lambd<pc;lambd++){
                   $.qsa('.post-t')[lambd].href=alur[lambd];
                }
                 for(h=0;h<la.length;h++)
