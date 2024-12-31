@@ -239,6 +239,7 @@
            bottom: 0 ;
            left:0;
            right:0;
+   color:#000;
             position:fixed;
            
             
@@ -248,6 +249,7 @@
             width:calc(300px);
             height:calc(200px);
             background-color:#fff;
+   color:#000;
             margin:15% auto;
             border-radius :7px;
             border:1px solid #ccc;
@@ -262,6 +264,7 @@
             height:130px;
             font-weight:300;
             line-height:1.5em;
+           color:#000;
             font-size: 15px ;
             padding:.5em;
         }
@@ -309,6 +312,7 @@
     background-color:currentColor;
      border:1px solid #ccc;
   }
+   
 
 } 
     
