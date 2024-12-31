@@ -61,6 +61,11 @@
                 // la.map(dop)
                 
             }).catch(e=>console.error(e));
+          $.qs('#bxbtn > button').addEventListener('click',function(){
+             this.parentElement.parentElement.parentElement.style.display="none";
+             xyz_ba.click();
+          });
+   
             xyz_ba.addEventListener("click",function(){
                 getAd();
                 rmsks();
