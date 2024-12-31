@@ -235,7 +235,7 @@
                   width:50%;
               }
           }
-    /* @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: light) {
   body,.txt-p {
     background: #FFF;
     color: #333;
@@ -245,6 +245,7 @@
   }
   .ft{
     background-color: #fff;
+     border:1px solid #000;
   }
   
  
@@ -255,12 +256,13 @@
     color:currentColor;
   }
   body{
-    background-image: linear-gradient(to bottom right,#ee410c,#ee0d1c,#44096e,rgb(201, 201, 8));
-    color: #e7e3e3;
+    background-color: #3b3b3b;
+    color: #fff;
   }
   .ft{
     background-color:currentColor;
+     border:1px solid #ccc;
   }
 
-} */
+} 
     
