@@ -35,7 +35,7 @@
     {
         ed="01 JAN 2025 00:00:00";
         timed=dit(ed);
-        document.title=`${wks(timf(timed).d)} ${timf(timed).ho}h ${timf(timed).mi}m ${timf(timed).sc}s`;
+        //document.title=`${wks(timf(timed).d)} ${timf(timed).ho}h ${timf(timed).mi}m ${timf(timed).sc}s`;
         if(timed<=0){
             clearInterval(c);
         }else{
