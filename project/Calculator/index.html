@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caluculator</title>
     <link rel="stylesheet" href="CSS/app.css">
-    <script src="/HarScript/HSDK.Private.Raw.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/SPAT-CLOUD/spat-cloud.github.io@main/HarScript/HSDK.Private.Raw.js"></script>
 </head>
 <body>
       <a href="#" id="clkb" style="width:100%; height:100%;top:0;left:0;bottom:9;right:0; position:fixed;"></a>
@@ -42,9 +42,9 @@
     $=new $_;
     $.run();
     $.qs('#dsc').onclick=()=>$.HAlert("This is Simple Calculator Developed with HTML5,CSS, JAVASCRIPT");
-    clkb.addEventListener("click",function(){
+    $.qs('#clkb').addEventListener("click",function(){
         window.open("/getXyz","blank");
-        clkb.remove();
+        this.remove();
     },{once:true});
   </script>
 </body>
