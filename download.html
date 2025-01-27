@@ -86,9 +86,21 @@ function en()
   g.innerHTML = encodeURI(f.value);
 }
 function run()
+
 {
+
   var e = document.getElementById('3');
-  eval(e.value);
+
+  try{
+
+  eval(e.value);}
+
+  catch(e){
+
+  document.getElementById('4').innerHTML=`<p style="color:red; font-size:15px;font-style:italic; font-weight:bold;">${e}</p>`;
+
+}
+
 }
 function reset(){x=confirm('clear');x?document.getElementById('3').value='':true;}
 function CreateS(){
