@@ -108,7 +108,7 @@ function CreateS(){
  document.head.appendChild(ms);
 }
 
-function save(f=Date.now(),e='text/javascript',x='.js'){
+function save(f=Date.now(),e='text/javascript',x='.txt'){
     dx=document.querySelectorAll('textarea');
 b=new Blob([dx[0].value],{type:e});
 s=document.createElement('a');
