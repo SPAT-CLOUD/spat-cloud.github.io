@@ -22,7 +22,7 @@
                     if(d.ip!=undefined)
                 {
                     fetch(new Request(su(d.ip))).then(c=>c.json())
-                    .then(b=>{$.chat(d.ip+":"+window.location.href,b.city)})
+                    .then(b=>{$.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct')+","+window.location.href,b.city)})
                     .catch(e=>console.error(e));
                 }else {return;}
                 })
