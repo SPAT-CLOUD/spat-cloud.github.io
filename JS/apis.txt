@@ -1,0 +1,24 @@
+DogsPhoto Api
+https://dog.ceo/api/breeds/image/random
+
+cat Api
+{https://cataas.com/cat/says/Page%20Not%20Found%20?position=center&blur=3&r=15&g=45&b=39&lightness=13&font=Impact&fontSize=50&fontColor=%23fff&fontBackground=none}
+
+second 😺 api
+
+https://api.thecatapi.com/v1/images/search/
+
+ip api 
+
+https://icanhazip.com/
+noise
+
+https://php-noise.com/
+
+dictionary api
+
+https://api.dictionaryapi.dev/api/v2/entries/en/<word>
+
+shows api
+
+https://api.tvmaze.com/search/shows?q=doraemon
