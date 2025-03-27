@@ -9,11 +9,11 @@ class LowCrypt
           }
         
         
-         var r={0:'Q',1:'R',2:'S',3:'T',4:'U',5:'V',6:'W',7:'X',8:'Y',9:'Z'};
-         var ir={'Q':0,'R':1,'S':2,'T':3,'U':4,'V':5,'W':6,'X':7,'Y':8,'Z':9};
-          let HC_1=(h)=>parseInt(h,2**4)+31;
-         let CC_1=(f)=>String.fromCharCode(f);
-         let SS_1=(g,c=',')=>String(g).split(c).join('');
+         r={0:'Q',1:'R',2:'S',3:'T',4:'U',5:'V',6:'W',7:'X',8:'Y',9:'Z'};
+         ir={'Q':0,'R':1,'S':2,'T':3,'U':4,'V':5,'W':6,'X':7,'Y':8,'Z':9};
+           HC_1=(h)=>parseInt(h,2**4)+31;
+          CC_1=(f)=>String.fromCharCode(f);
+          SS_1=(g,c=',')=>String(g).split(c).join('');
             ___dhash()
           {
                 var N=[];
@@ -43,7 +43,7 @@ class HarScript extends LowCrypt
     {
         super(x);
     }
-    const rh=()=>{
+    let rh=()=>{
       var np=Number.prototype,op=Object.prototype,sp=String.prototype;
       // np=;
       np.hex=function(){var hx=this.toString(16);return hx.length<6?'0x'+'0'.repeat(6-hx.length)+hx:'0x'+hx;};
