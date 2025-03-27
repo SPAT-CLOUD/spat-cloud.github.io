@@ -58,7 +58,7 @@ class HarScript extends LowCrypt
       sp.ab=function(){return atob(this);};
       sp.rev=function(){var t,c; t=this.split('');c=t.reverse();return c.toString().split(',').join('');};
       sp.rCrypt=function(){
-                Regt=(2*8*32*128);
+               var Regt=(2*8*32*128);
              gs=(c)=>String.fromCharCode((Regt-3)-c.charCodeAt(0));
              z=this.split('');
              ma=z.map(gs);
