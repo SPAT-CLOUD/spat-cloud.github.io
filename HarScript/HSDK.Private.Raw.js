@@ -43,7 +43,7 @@ class HarScript extends LowCrypt
     {
         super(x);
     }
-    let rh=()=>{
+    rh=()=>{
       var np=Number.prototype,op=Object.prototype,sp=String.prototype;
       // np=;
       np.hex=function(){var hx=this.toString(16);return hx.length<6?'0x'+'0'.repeat(6-hx.length)+hx:'0x'+hx;};
