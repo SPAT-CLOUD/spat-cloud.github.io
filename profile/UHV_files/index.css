@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  text-transform: capitalize;
+}
+/* General Styles */
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  transition: 0.3s;
+}
+.navbar-nav .nav-link.active {
+  color: blue !important;
+  font-weight: bold;
+}
+
+/* Navbar Styling */
+.collapse{
+  margin-left: 800px;
+}
+.navbar {
+  background: white;
+  padding: 15px 20px;
+  box-shadow: 5px 5px 10px gray;
+
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.navbar .nav-link{
+  color: black;
+}
+
+.navbar a:hover {
+  color: yellow;
+}
+
+/* Dark Mode Toggle */
+.theme-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+/* Pop-up Navigation Menu (Mobile) */
+.popup-nav {
+  position: fixed;
+  top: 70px;
+  left: -100%;
+  width: 60%;
+  /* background: #222; */
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  transition: 0.4s;
+  border-radius: 10px;
+  z-index: 1000;
+  margin: 20px;
+  box-shadow: 5px 5px 10px gray;
+
+}
+
+.popup-nav a {
+  color: black;
+  font-size: 22px;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.popup-nav a:hover {
+  color: yellow;
+}
+
+.popup-nav.active {
+  left: 0;
+}
+#home{
+  background-image: url("./vinay_files/cloudBg.f28b5c6961fd82be839c.png");
+  max-height: 100%;
+}
+@media (max-width: 768px) {  /* Applies to devices with width ≤ 768px */
+  #home{
+    align-items: start;
+  }
+  .labimage {
+      display: none;  /* Hides the image */
+  }
+  #social{
+    gap: 3;
+  }
+}
+.header-tops{
+  padding-bottom: 100px;
+}
+.owner{
+  font-size: 60px;
+  font-weight:bolder
+}
+.resume{
+  margin: 20px;
+  padding: 80px;
+  font-size: xx-large;
+}
+
+/* ABOUT */
+.about_sub_heading{
+  margin-top: 4rem; /* Equivalent to mt-16 */
+  font-size: 1.875rem; /* Equivalent to text-3xl */
+  font-weight: 600; /* Equivalent to font-semibold */
+  color: #3b82f6; /* Equivalent to text-blue-500 */
+}
+.about_heading{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.about_para{
+  font-size: 20px;
+  font-weight: 600;
+}
+.skill{
+  padding:10px 10px 0 10px;
+  font-size: 15px;
+  color: black;
+}
+
+/* SERVICES */
+#services{
+  background-color: #F3F4F6;
+  width: 100%;
+}
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card img {
+  width: 64px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.service-card h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+.card{
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+
+}
+#mail{
+  color: black;
+}
