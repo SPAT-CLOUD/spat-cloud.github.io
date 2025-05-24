@@ -71,11 +71,8 @@ class HarScript extends LowCrypt
         var nog=sbs
         return nog.toString().split(',').join('');
     }
-    /*sp.lh3=function(){
-              ar1=[];
-              
-    };*/
-    };
+    
+    }
     CreateAlert()
     {
      var c,d;
