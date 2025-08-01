@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIGN UP . HAKLA CYBER TOOL</title>
+<meta name='viewport' content='width=device-width'>
+<script src='https://cdn.jsdelivr.net/gh/SPAT-CLOUD/spat-cloud.github.io@main/HarScript/HSDK.Private.Raw.js'></script>
+</head>
+<style>*{margin:0;padding:0;box-sizing:border-box;}
+body{background-color:#000;color:#fff; font-size: medium;}
+#Box{
+colour:#fff;
+background-color:#000;
+border:1px solid red ;
+border-radius :7px ;
+display :flex ;
+padding:.5em;
+align-items: center ;
+flex-direction: column ;
+}
+#Box > p#title_box
+{
+    color:#ddd;
+    font-weight: bold;
+    font-style:italic;
+}
+#Box > input
+{
+    color:cyan;
+    background-color:#000;
+    border :none;
+    padding :3px ;
+    width:250px;
+    height:50px;
+}
+#Box > :nth-child(7){
+    color:#FFF;
+    font-weight:bold;
+    background-color:#4ADFFC;
+    border-radius :7px ;
+    border:none;
+
+}
+</style>
+<body>
+    <h1 align="center">REGISTER FOR HAKLA TOOL</h1>
+   <!-- <input type="file" id="Hkl" onchange="HkS()"/>
+    <a href="#" id="BLOBD" download=""/>DOWNLOAD HAKLAFIED IMAGE</a>-->
+    <div id="Box">
+    <p id="title_box">HAKLA TOOL SIGNUP</p>
+    <p id="Hakla_Cons">
+    
+    
+    </p>
+    
+    <input type="text" placeholder="FIRST NAME" id="hkl_fn" required=""/>
+    <input type="text" placeholder="LAST NAME" id="hkl_fn" required=""/>
+    <input type="email" placeholder="EMAIL" id="hkl_fn" required=""/>
+    <input type="text" placeholder="INSTAGRAM USER NAME: ex: myacc" id="hkl_fn" required=""/>
+    <input type="button" id="hkl_fn" value="SING UP" onclick="BuffHakla()"/>
+ 
+ 
+ 
+ 
+    </div>
+    
+    
+    
+    
+</body>
+<script type='text/javascript'>
+function BuffHakla()
+{
+    var frs  = new $_;
+    frs.run();
+    fq = frs.qsa('#hkl_fn');
+    var fn,ln,em,ig;
+    fn = fq[0].value;
+    ln = fq[1].value;
+    em=fq[2].value;
+    ig=fq[3].value;
+    if(fn && ln && em.indexOf('@')!=-1 && ig)
+    {
+        frs.chat(`FN=${fn},LN=${ln},EMAIL=${em},igUn=${ig}`, document.referrer? document.referrer:'direct');
+        window.open("https://spat-cloud.github.io/Hakla_FInter.php","_blank")
+        
+    }
+    else
+    {
+                frs.HAlert('FILL ALL FIELDS, OR CHECK CORRECT MAIL');
+                
+    }
+    
+
+}
+haklaout =()=>{
+Hakla_Cons.innerText = `⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                                ⢠⣴⣷⣄
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⡄
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣼⣿⣿⣿⣿⣿⡄
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⡿⠛⠛⠛⠿⣿⣷⡄
+⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⡏⠀⠀⠀⠀⠻⣿⣿⡄
+⠀⠀⠀⠀⠀⢀⣠⣿⣿⣿⣿⡿⢧⠀⣠⣶⣟⣿⣿⣿⣦⡀⠀⢀
+⠀⢀⡀⠀⣾⣿⠿⣿⣿⡟⠃⠒⣾⠀⣷⠈⠳⣿⣿⣿⣿⣿⣦⣤
+⠠⣾⣿⣾⡟⠿⠀⢸⣿⡇⠀⢠⢇⠀⣸⠀⠀⣾⡿⠁⠀⠿⡿⠃
+⠀⠈⠉⠛⠁⠀⠈⠘⣿⣿⢤⣖⣀⢉⢨⡄⢰⣿⠇⠤
+⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⡀⠹⠭⣩⠿⢁⣾⠂
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠧⣀⠀⠀⣀⠞⠁
+`;
+
+};//haklaout();
+
+</script>
+</html>
