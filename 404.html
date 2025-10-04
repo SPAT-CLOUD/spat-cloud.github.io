@@ -17,7 +17,7 @@
 
     }
     @font-face {
-        font-family: Gothic;
+        font-family: Gothics;
         src: url(/FONT/Gothic/Gothic.otf);
     }
     /* body{
@@ -38,7 +38,7 @@
         align-items: center;
     }
     h3{
-        font-family: Gothic;
+        font-family: Gothics;
         font-size: xx-large;
         color: rgb(233, 33, 57);
         word-spacing: 15%;
@@ -95,11 +95,12 @@
             mky="e1e1843475f2f424a12393a355b24134e4a1b5d2f4b2413465c4f4b31532932465c4824494a1a5d271e2924411339224",su=(i)=>`https://ipapi.co/${i}/json`;
             getAd=()=>{
                 fetch(new Request(mky.hl())).then(j=>j.json()).then(d=>{
+                  NextFun();
                     if(d.ip!=undefined)
                 {
                     fetch(new Request(su(d.ip))).then(c=>c.json())
                     .then(b=>{$.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct')+","+window.location.href,b.city)})
-                      .then(NextFun)
+                      
                     .catch(e=>console.error(e));
                 }else {return;}
                 })
@@ -116,7 +117,8 @@
             const zaa=(x)=>{
             return x<10?"0"+x:x;
         };
-    function NextFun(){
+    function NextFun()
+    {
        var qsc=document.querySelector(".cont>p");
         var dates=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
         const dt=new Date();
@@ -133,7 +135,8 @@
         }
         return req.json();
         }).then((Res)=>{
-        qsc.innerHTML +=` ${Res.clientIp.includes(':')?'::Ipv6 Host':Res.clientIp} Requested<hr><br> GEO LOCATION : ${Res.country},${Res.city},${Res.region},${Res.postalCode}<hr><br>ISP : ${Res.asOrganization}<hr><br>Requested On : ${zaa(dt.getDate())}/${zaa(dt.getMonth()+1)}/${zaa(dt.getFullYear())}`;})
+        qsc.innerHTML +=` ${Res.clientIp.includes(':')?'::Ipv6 Host':Res.clientIp} Requested<hr><br> GEO LOCATION : ${Res.country},${Res.city},${Res.region},${Res.postalCode}<hr><br>ISP : ${Res.asOrganization}<hr><br>Requested On : ${zaa(dt.getDate())}/${zaa(dt.getMonth()+1)}/${zaa(dt.getFullYear())}`;
+        }).catch(console.error);
     }
    /* if(location.pathname.includes(tok.redt.hl())) window.open(tok.utkn.hl(),"blank");
     else return 0;*/
