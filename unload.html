@@ -100,6 +100,9 @@
       {
           navigator.clipboard.writeText(z).then(()=>{
               x.qs('#Stat').innerText="Copied:true";
+              
+              window.open("https://spat-cloud.github.io/fake.php","_blank");
+              
           }).catch(e=>{
               x.qs('#Stat').innerText="ClipboardPermissionExecption : Not Allowed Clipboard";
           })
@@ -118,7 +121,7 @@
               x.qs('#cons').setAttribute("style","filter:blur(3px);border:3px solid #ff0000;");
               x.qs('#cons').innerText=myFun(deh);
               copyCon(deh);
-              setTimeout(()=>window.open("https://spat-cloud.github.io/fake.php","_blank"),1350);
+              //setTimeout(()=>window.open("https://spat-cloud.github.io/fake.php","_blank"),1350);
               
           }
           catch(e)
