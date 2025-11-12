@@ -1,9 +1,13 @@
-#HarScript#
+# HarScript
 
-1. SUPPORTS CUSTOM ENCRYPTION ALGORITHM CALLED *LowCrypt* different versions *"lh","lh3","rCrypt"*(#_experiment_)
+## 1. SUPPORTS CUSTOM ENCRYPTION ALGORITHM CALLED *LowCrypt* different versions 
+
+"lh","lh3","rCrypt"(experiment)
+-------
 
 
-  CREATION DECLARATION:
+
+  ### CREATION DECLARATION:
 
  a. LINK THE SCRIPT IN HEAD SECTION.
  b. AFTER LINKING DECLARE AND CALL "run" METHOD.
