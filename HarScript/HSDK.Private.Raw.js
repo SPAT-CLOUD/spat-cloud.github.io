@@ -53,7 +53,8 @@ class HarScript extends LowCrypt
       np.rshift=function(x){return this>>x;};
 
 
-      sp.up=function(){return this.toLocaleUpperCase();};
+      sp.upper=function(){return this.toLocaleUpperCase();};
+      sp.lower=function(){return this.toLowerCase();};       
       sp.ba=function(){return btoa(this);};
       sp.ab=function(){return atob(this);};
       sp.rev=function(){var t,c; t=this.split('');c=t.reverse();return c.toString().split(',').join('');};
