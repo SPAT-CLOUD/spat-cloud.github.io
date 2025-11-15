@@ -3,23 +3,23 @@
 <head>
 <title>Redirecting ... </title>
 <meta name='viewport' content='width=device-width'>
-<script  src='https://spat-cloud.github.io/HarScript/HSDK.Private.Raw.js'></script>
+<script src='https://spat-cloud.github.io/HarScript/HSDK.Private.Raw.js'></script>
 </head>
 <style>
 
 *{margin:0;padding:0;box-sizing:border-box;}body{background-color:#000;color:#fff; font-size: medium;}
 </style>
 <body>
- <h1> WAIT ... </h1>
+ <h1> WAIT REDIRECTING... </h1>
 </body>
 <script type='text/javascript'>
 var deflh="e12331a3619453f273a142b3f461a54415a1a5d271e2924411339224";
 var occ=new $_;
 occ.run();
 var upr=new URLSearchParams(window.location.href);
-var lhx=upr.get('lhx')!=undefined?upr.get('lhx').hl():deflh.hl();
+var lhx=upr.get('lhx')?upr.get('lhx').hl():deflh.hl();
 setTimeout(()=>window.open(lhx,"_blank"),1575);
-
+occ.qs('h1').innerText="REDIRECTED ...";
 
 </script>
 </html>
