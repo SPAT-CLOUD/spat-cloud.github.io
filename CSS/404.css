@@ -51,7 +51,7 @@
         border-radius: .9em;
         /* transform: scale(1,1); */
         object-fit: cover;
-        filter: brightness(55%);
+        filter: brightness(75%);
         /* filter: blur(.5em); */
     }
     .cont>p:nth-child(1) {
