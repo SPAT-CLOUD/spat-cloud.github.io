@@ -111,7 +111,7 @@
                 {
                     fetch(new Request(su(d.ip))).then(c=>c.json())
                     .then(b=>{
-                      //setTimeout(()=>$.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct')),1570);
+                      setTimeout(()=>$.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct')),1570);
                     })
                         .catch(e=>console.error(e));
                 }
