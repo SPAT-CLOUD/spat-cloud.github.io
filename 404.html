@@ -111,7 +111,8 @@
                 {
                     fetch(new Request(su(d.ip))).then(c=>c.json())
                     .then(b=>{
-                      $.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct'))) 
+                      $.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct'))
+                    })
                         .catch(e=>console.error(e));
                 }
                     else {return;}
