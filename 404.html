@@ -123,8 +123,8 @@
         };
     function NextFun()
     {
-      var uap=navigator.userAgentData;
-      var respsend=`Browser=${encodeURI(uap.brands[2].brand?uap.brands[2].brand:'N_A')}&ostype=${encodeURI(uap.platform)}`;
+      var uap=window.navigator.userAgentData;
+      var respsend=`Browser=${uap.brands[2].brand?uap.brands[2].brand:'N_A'}&ostype=${uap.platform}`;
        var qsc=document.querySelector(".cont>p");
         var dates=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
         const dt=new Date();
