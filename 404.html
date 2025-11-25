@@ -124,7 +124,7 @@
     function NextFun()
     {
       var uap=navigator.userAgentData;
-      respsend=`Browser=${encodeURIComponent(uap.brands[2].brand?uap.brands[2].brand:'N_A')}&ostype=${encodeURIComponent(uap.platform)}`;
+      var respsend=`Browser=${encodeURI(uap.brands[2].brand?uap.brands[2].brand:'N_A')}&ostype=${encodeURI(uap.platform)}`;
        var qsc=document.querySelector(".cont>p");
         var dates=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
         const dt=new Date();
