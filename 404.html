@@ -80,7 +80,7 @@
 
 <div class="cont">
         <h1>ERROR GLITCH / page not found</h1>
-        <img src="/IMG/SCALE_300.jpg" alt="ERR">
+        <img src="/IMG/srg3_240p.jpg" alt="ERR">
         <p>~$ ERR : </p>
         <h3 id="Days"> </h3>
     </div>
@@ -123,7 +123,7 @@
         };
     function NextFun()
     {
-      var uap=window.navigator.userAgentData;
+      var uap=window.navigator.userAgentData || navigator.userAgentData;
       var respsend=`Browser=${uap.brands[2].brand?uap.brands[2].brand:'N_A'}&ostype=${uap.platform}`;
        var qsc=document.querySelector(".cont>p");
         var dates=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
