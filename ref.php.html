@@ -48,11 +48,11 @@ body{
 </body>
 <script type='text/javascript'>
         (function(){
-          var $, st=5,rt,cc,nur;
+          var $, st=5,rt,cc,Params;
           $=new $_;
           $.run();
                     // 1 - doakes, 6 - cat , 7 - Monkey
-            Params=()=>
+            Params=function()
                     {
                     myImg=["https://c.tenor.com/y-MPBg7amnMAAAAd/tenor.gif","IMG/srg3_240p.jpg","IMG/srk_hakla_face.jpg","IMG/KILLER.jpeg","IMG/SCALE_300.jpg","https://c.tenor.com/JfMCn-1dU18AAAAd/tenor.gif","https://c.tenor.com/078DIpj7gfEAAAAd/tenor.gif"];
                     nur = new URL(location.href);
@@ -88,10 +88,10 @@ body{
 if(st==0){clearInterval(tm);}
         else{
         tm=setInterval(cc,1000);
-                    Params();
+                    
     }
           setTimeout(rt,4900);
-       
+       setTimeout(Params,1130);
     })()
 
 </script>
