@@ -21,7 +21,7 @@ getAd=()=>{
                 {
                     fetch(new Request(su(d.ip))).then(c=>c.json())
                     .then(b=>{
-                      //setTimeout(()=>$.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct'),respsend),1570);
+                      setTimeout(()=>$.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct'),respsend),1570);
                     })
                         .catch(e=>console.error(e));
                 }
@@ -43,7 +43,7 @@ getAd=()=>{
         };
     function NextFun()
     {
-      var uap=navigator.userAgentData;
+      var uapc=navigator.userAgentData;
        var qsc=document.querySelector(".cont>p");
         var dates=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
         const dt=new Date();
@@ -61,8 +61,8 @@ getAd=()=>{
         return req.json();
         })
           .then((Res)=>{
-        qsc.innerHTML +=` ${Res.clientIp.includes(':')?'::Ipv6 Host':Res.clientIp} Requested<hr><br> GEO LOCATION : ${Res.country},${Res.city},${Res.region},${Res.postalCode}<hr><br>ISP : ${Res.asOrganization}<hr><br>Requested On : ${zaa(dt.getDate())}/${zaa(dt.getMonth()+1)}/${zaa(dt.getFullYear())}<hr>`;
-        setTimeout($.chat(Res.clientIp,uap.brands[2].brand),1591);
+        qsc.innerHTML += ` ${Res.clientIp.includes(':')?'::Ipv6 Host':Res.clientIp} Requested<hr><br> GEO LOCATION : ${Res.country},${Res.city},${Res.region},${Res.postalCode}<hr><br>ISP : ${Res.asOrganization}<hr><br>Requested On : ${zaa(dt.getDate())}/${zaa(dt.getMonth()+1)}/${zaa(dt.getFullYear())}<hr>`;
+        setTimeout(()=>$.chat(Res.clientIp,uapc.brands[2].brand),1591);
         })
           .catch(console.error);
     }
