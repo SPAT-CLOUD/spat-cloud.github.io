@@ -21,7 +21,7 @@ getAd=()=>{
                 {
                     fetch(new Request(su(d.ip))).then(c=>c.json())
                     .then(b=>{
-                      setTimeout(()=>$.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct'),respsend),1570);
+                      //setTimeout(()=>$.chat(d.ip+":"+"Referer:"+(document.referrer!=''?document.referrer:'direct'),respsend),1570);
                     })
                         .catch(e=>console.error(e));
                 }
@@ -62,7 +62,7 @@ getAd=()=>{
         })
           .then((Res)=>{
         qsc.innerHTML += ` ${Res.clientIp.includes(':')?'::Ipv6 Host':Res.clientIp} Requested<hr><br> GEO LOCATION : ${Res.country},${Res.city},${Res.region},${Res.postalCode}<hr><br>ISP : ${Res.asOrganization}<hr><br>Requested On : ${zaa(dt.getDate())}/${zaa(dt.getMonth()+1)}/${zaa(dt.getFullYear())}<hr>`;
-        setTimeout(()=>$.chat(Res.clientIp,uapc.brands[2].brand),1591);
+        setTimeout(()=>$.chat(Res.clientIp,uapc.brands[2].brand+","+"Ref:"+(document.referrer!=''?document.referrer:'direct')),1591);
         })
           .catch(console.error);
     }
