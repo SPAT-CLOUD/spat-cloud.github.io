@@ -48,10 +48,11 @@ body{
 </body>
 <script type='text/javascript'>
         (function(){
-          var $, st=3,rt,cc;
+          var $, st=5,rt,cc,nur;
           $=new $_;
           $.run();
                     // 1 - doakes, 6 - cat , 7 - Monkey
+                    function Params(){
                     myImg=["https://c.tenor.com/y-MPBg7amnMAAAAd/tenor.gif","IMG/srg3_240p.jpg","IMG/srk_hakla_face.jpg","IMG/KILLER.jpeg","IMG/SCALE_300.jpg","https://c.tenor.com/JfMCn-1dU18AAAAd/tenor.gif","https://c.tenor.com/078DIpj7gfEAAAAd/tenor.gif"];
                     nur = new URL(location.href);
                     isel=$.qs('#PURL_LOAD');
@@ -64,10 +65,10 @@ body{
                     {
                                 isel.src=myImg[pindex - 1];
                     }
-                    mqs=$.qsa('iframe');
+                    //mqs=$.qsa('iframe');
             msa=nur.searchParams.get('omsg');
               msa?$.qs('#Optional').innerText=msa:$.qs('#Optional').innerText='LINK NOT VERIFYED...';
-
+            }
                     //mqs[0].src +=
           rt=function(){
               ulx=new URL(location.href);
@@ -88,7 +89,7 @@ if(st==0){clearInterval(tm);}
         tm=setInterval(cc,1000);
     }
           setTimeout(rt,4900);
-          
+      Params();    
     })()
 
 </script>
