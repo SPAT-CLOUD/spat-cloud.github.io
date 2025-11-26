@@ -83,17 +83,21 @@ body{
               
               $.qs('#tme').innerHTML=st;
               st--;        
-            Params();
+            //Params();
           };
         //  if(!st) clearInterval(tm);
         
-if(st==0){clearInterval(tm);}
+if(st<=0){
+            tm=setInterval(cc,1000);
+            //clearInterval(tm);
+}
         else{
-        tm=setInterval(cc,1000);
+        clearInterval(tm);
                     
     }
           setTimeout(rt,4900);
        //setTimeout(Params,1130);
+                    Params();
     })()
 
 </script>
