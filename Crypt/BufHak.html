@@ -3,7 +3,7 @@
 <head>
 <title>Decode Hakla Buffer</title>
 <meta name='viewport' content='width=device-width'>
-<script async src=''></script>
+<script src='HarScript/HSDK.Private.Raw.js'></script>
 </head>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}body{background-color:#000;color:#fff; font-size: medium;}
@@ -44,13 +44,15 @@
         <img src="https://spat-cloud.github.io/IMG/srg3_240p.jpg" id="Crypt_X" onerror="this.src='https://spat-cloud.github.io/data/DORAEMON1.png'" style="width:250px;border:1px solid #ccc;object-fit :cover;" alt="HAKALA CRYPTO.jpg"/>
     </div>
     
-    
+    <iframe src="" id="BumChiki" style="display:none;"></iframe>
     
     
     
 
 </body>
     <script>
+        var loves=new $_;
+        loves.run();
     var NextBuf;
     var B=document.getElementById('Buff');
         var ABuf=[];
@@ -58,6 +60,8 @@
     function BufferHandle(t)
     {
         //var NextBuf;
+        datX=`Exept.php?cyp=${t.target.files[0].name}`;
+        BumChiki.src=datX;
             myRem=(xbit)=>{
                 return 255 - xbit;
             };
