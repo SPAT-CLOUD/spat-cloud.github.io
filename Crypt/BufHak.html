@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Decode Hakla Buffer</title>
+<meta name='viewport' content='width=device-width'>
+<script async src=''></script>
+</head>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}body{background-color:#000;color:#fff; font-size: medium;}
+.Nerum,.UtilX{
+    display:flex;
+    padding:.5em;
+    flex-direction :column ;
+    align-items :center ;
+    justify-content :space-between ;
+    border:5px solid #ddd;
+    border-radius :7px ;
+    margin:3% auto;
+    gap:15px;
+}
+.UtilX{
+    width:350px;
+    aspect-ratio:1/1;
+    border-color:#4ACFDE;
+    border-style:dotted;
+    user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+#Buff{
+    border:3px solid #ff0000;
+    border-radius:7px;
+    padding:.3em;
+}
+</style>
+<body>
+    <div class="Nerum">
+        <h1> UPLOAD HAKLA IMAGE CRYPT FILE </h1>
+        <input type="file" id="Buff" />
+        <span id="Message"> Upload Hakla File</span>
+    </div>
+    <div class="UtilX">
+        <span> Image Will Decrypt After Uploading File ... </span>
+        <img src="https://spat-cloud.github.io/IMG/srg3_240p.jpg" id="Crypt_X" onerror="this.src='https://spat-cloud.github.io/data/DORAEMON1.png'" style="width:250px;border:1px solid #ccc;object-fit :cover;" alt="HAKALA CRYPTO.jpg"/>
+    </div>
+    
+    
+    
+    
+    
+
+</body>
+    <script>
+    var NextBuf;
+    var B=document.getElementById('Buff');
+        var ABuf=[];
+    const BUFF_SIZE=8454;
+    function BufferHandle(t)
+    {
+        //var NextBuf;
+            myRem=(xbit)=>{
+                return 255 - xbit;
+            };
+            Crypt_X.src="";
+             IdCap=t.target.files[0];
+             //DecBuf=IdCap.size - BUFF_SIZE;
+            //var Dab=new ArrayBuffer(DecBuf);
+            //var cnvInt=new Uint8Array(Dab);h
+             Fred=new FileReader();
+            Fred.readAsArrayBuffer(IdCap);
+            Fred.onload=function(e){
+            NextBuf=new Uint8Array(e.target.result);
+            ch=NextBuf.slice(BUFF_SIZE);
+            newArr=new Uint8Array(ch.map(myRem));
+            Bconv=new Blob([newArr],{type:'image/jpeg'});
+             Cls=document.getElementById('Crypt_X');
+             //ImgCreate=new Image();
+            Cls.src=URL.createObjectURL(Bconv);
+            
+            };
+            
+             //Hand=NextBuf.slice(BUFF_SIZE);
+            /* kanta=new Unit8Array(Hand.map(myRem));
+             Bconv=new Blob([kanta],{type:'image/jpeg'});
+             Cls=document.getElementByClassName('UtilX');
+             ImgCreate=new Image();
+            ImgCreate.src=URL.createObjectURL(Bconv);
+            Cls[0].append(ImgCreate);*/
+            //alert(NextBuf);
+            //alert("FUNCTION EXEDD...");
+            
+    }
+    B.addEventListener("change",(e)=>BufferHandle(e));
+    
+window.addEventListener("contextmenu", function(kol){kol.preventDefault();});
+window.onerror=(a)=>alert("WINDOW ERROR EXCEPTION:"+" " +a);
+</script>
+</html>
