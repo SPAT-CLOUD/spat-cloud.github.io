@@ -1,6 +1,6 @@
 # extract.exe
 
-> Purpose File Transfer
+> Compatible With Windows 10/11 ,32-bit,64-bit
 
 ##### working
 
