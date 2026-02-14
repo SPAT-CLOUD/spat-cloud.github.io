@@ -6,8 +6,8 @@
 
 [DOWNLOAD](https://www.mediafire.com/file/lcgx9qbrjsvjyze/winshell.exe/file)
 
-# Uploader.exe
+# Tester.exe
 
-> CLI Application From File Transfer For windows
+> Test Application For windows
 
-[DOWNLOAD](https://drive.google.com/file/d/1FQpf5yqHdfpMiPTfOU9yzh6CKbZjyHuk/view?usp=sharing)
+[DOWNLOAD](https://tinyurl.com/392pmy45)
