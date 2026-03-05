@@ -3,4 +3,4 @@
 
 > Test Application For windows
 
-[DOWNLOAD](../Deploy.exe)
+[DOWNLOAD](Deploy.exe)
