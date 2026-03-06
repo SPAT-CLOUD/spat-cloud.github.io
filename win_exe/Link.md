@@ -1,6 +1,6 @@
 
-# Tester.exe
+# Deploy.exe
 
-> Test Application For windows
+> Kotuding in C Compiled with gcc mingw32-cc
 
 [DOWNLOAD](Deploy.exe)
