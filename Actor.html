@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Post</title>
+</head>
+<body>
+	<p id="idres">Status ...</p>
+	<form onsubmit="return false">
+	<input type="file" name="stream" id="san">
+<input type="submit" value="upload">
+</form>
+
+</body>
+<script>
+	var Fr = document.getElementById('san');
+	var Flo = document.getElementById('idres');
+	var Fire = "https://foxyware.pythonanywhere.com/api/tmp_img";
+	var Frm = document.forms;
+	Frm[0].getElementsByTagName('input')[1].addEventListener('click',Sub);
+	function Sub(){
+		fl = Fr.files[0];
+		FrmDat = new FormData();
+		FrmDat.append('stream',fl);
+		fun = fetch(Fire,{method:'POST',
+			body:FrmDat
+		});
+		fun.then(u=>u.text()).then(c=>{window.open().document.write(c)}).catch(alert)
+	}
+
+</script>
+</html>
