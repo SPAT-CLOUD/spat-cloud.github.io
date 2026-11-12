@@ -45,8 +45,9 @@
 		fun = fetch(Fire,{method:'POST',
 			body:FrmDat
 		});
+		Flo.classList.toggle('show');
 		fun.then(u=>u.text()).then(c=>{
-			Flo.classList.toggle('show');
+			// Flo.classList.toggle('show');
 			Flo.innerText = c;
 		}).catch(a=>{
 			Flo.classList.toggle('err');
