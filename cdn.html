@@ -24,7 +24,7 @@
 	</style>
 <body>
 	<h1>PERSONAL CLOUD FILE UPLOAD SPAT-CLOUD (max 300KB)</h1>
-	<p id="idres" >Status ...</p>
+	<p id="idres" >WAIT UPLOADING ...</p>
 	<form onsubmit="return false">
 	<input type="file" name="stream" id="san">
 <input type="submit" value="upload">
@@ -46,10 +46,10 @@
 			body:FrmDat
 		});
 		fun.then(u=>u.text()).then(c=>{
-			Flo.className.toggle('show');
+			Flo.classList.toggle('show');
 			Flo.innerText = c;
 		}).catch(a=>{
-			Flo.className.toggle('err');
+			Flo.classList.toggle('err');
 			Flo.innerText = a;
 		});
 	}
