@@ -6,9 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Form Post</title>
 </head>
+	<style>
+		.none{
+			display:none;
+		}
+		.show{
+			display:block;
+		}
+		.err{
+			color:red;
+		}
+		#idres
+		{
+			display:none;
+			color:green;
+		}
+	</style>
 <body>
 	<h1>PERSONAL CLOUD FILE UPLOAD SPAT-CLOUD (max 300KB)</h1>
-	<p id="idres">Status ...</p>
+	<p id="idres" >Status ...</p>
 	<form onsubmit="return false">
 	<input type="file" name="stream" id="san">
 <input type="submit" value="upload">
@@ -18,6 +34,7 @@
 <script>
 	var Fr = document.getElementById('san');
 	var Flo = document.getElementById('idres');
+	
 	var Fire = "https://foxyware.pythonanywhere.com/api/tmp_img";
 	var Frm = document.forms;
 	Frm[0].getElementsByTagName('input')[1].addEventListener('click',Sub);
@@ -28,7 +45,13 @@
 		fun = fetch(Fire,{method:'POST',
 			body:FrmDat
 		});
-		fun.then(u=>u.text()).then(c=>{window.open().document.write(c)}).catch(alert)
+		fun.then(u=>u.text()).then(c=>{
+			Flo.className.toggle('show');
+			Flo.innerText = c;
+		}).catch(a=>{
+			Flo.className.toggle('err');
+			Flo.innerText = a;
+		});
 	}
 
 </script>
