@@ -52,7 +52,7 @@
 	var Frm = document.getElementById('MTR');
 	// Frm.getElementsByTagName('input')[1].addEventListener('click',Sub);
 	function Sub(){
-		if(Fr.files.length!=0){
+		if(Fr.files.length!=0 || Fr.files[0].size < (300*1024)){
 		var fl = Fr.files[0];
 
 		var FrmDat = new FormData();
@@ -67,7 +67,7 @@
 		})
 		return false;
 		}else{
-			alert("NO FILES CHOOSED");
+			alert("NO FILES CHOOSED or BUFFER OVERFLOW");
 			return false;
 		}
 	}
