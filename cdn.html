@@ -25,7 +25,7 @@
 <body>
 	<h1>PERSONAL CLOUD FILE UPLOAD SPAT-CLOUD (max 300KB)</h1>
 	<p id="idres" >WAIT UPLOADING ...</p>
-	<form onsubmit="return false">
+	<form onsubmit="return false" id="MTR">
 	<input type="file" name="stream" id="san">
 <input type="submit" value="upload">
 </form>
@@ -36,8 +36,8 @@
 	var Flo = document.getElementById('idres');
 	
 	var Fire = "https://foxyware.pythonanywhere.com/api/tmp_img";
-	var Frm = document.forms;
-	Frm[0].getElementsByTagName('input')[1].addEventListener('click',Sub);
+	var Frm = document.getElementById('MTR');
+	Frm.getElementsByTagName('input')[1].addEventListener('click',Sub);
 	function Sub(){
 		fl = Fr.files[0];
 		FrmDat = new FormData();
