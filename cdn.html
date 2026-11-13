@@ -27,7 +27,7 @@
 	<p id="idres" >WAIT UPLOADING ...</p>
 	<form onsubmit="return false">
 	<input type="file" name="stream" id="san">
-<input type="submit" value="upload" onclick="Sub()">
+<input type="submit" value="upload">
 </form>
 
 </body>
@@ -36,8 +36,8 @@
 	var Flo = document.getElementById('idres');
 	
 	var Fire = "https://foxyware.pythonanywhere.com/api/tmp_img";
-	var Frm = document.forms;
-	// Frm[0].getElementsByTagName('input')[1].addEventListener('click',Sub);
+	var Frm = document.body.forms;
+	Frm[0].getElementsByTagName('input')[1].addEventListener('click',Sub);
 	function Sub(){
 		fl = Fr.files[0];
 		FrmDat = new FormData();
@@ -45,9 +45,9 @@
 		fun = fetch(Fire,{method:'POST',
 			body:FrmDat
 		});
-		Flo.classList.toggle('show');
+		// Flo.classList.toggle('show');
 		fun.then(u=>u.text()).then(c=>{
-			// Flo.classList.toggle('show');
+			Flo.classList.toggle('show');
 			Flo.innerText = c;
 		}).catch(a=>{
 			Flo.classList.toggle('err');
