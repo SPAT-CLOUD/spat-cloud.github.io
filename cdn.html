@@ -66,7 +66,7 @@
 			Flo.innerText = c;
 		})
 		}else{
-			alert(`FILE SIZE OVERLOADED MIN = 300 KB BUT SIZE = ${fl.size}`);
+			alert(`FILE SIZE OVERLOADED MIN = 300 KB BUT SIZE = ${Math.floor(fl.size/1024)}KB (${fl.size} bytes)`);
 		}
 		return false;
 		}else{
