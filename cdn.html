@@ -27,17 +27,15 @@
 	<p id="idres" >WAIT UPLOADING ...</p>
 	<form onsubmit="return false" id="MTR">
 	<input type="file" name="stream" id="san">
-<input type="submit" value="upload">
+<input type="submit" value="upload" onclick="Sub()">
 </form>
-
-</body>
 <script>
 	var Fr = document.getElementById('san');
 	var Flo = document.getElementById('idres');
 	
 	var Fire = "https://foxyware.pythonanywhere.com/api/tmp_img";
 	var Frm = document.getElementById('MTR');
-	Frm.getElementsByTagName('input')[1].addEventListener('click',Sub);
+	// Frm.getElementsByTagName('input')[1].addEventListener('click',Sub);
 	function Sub(){
 		fl = Fr.files[0];
 		FrmDat = new FormData();
@@ -56,4 +54,6 @@
 	}
 
 </script>
+
+</body>
 </html>
