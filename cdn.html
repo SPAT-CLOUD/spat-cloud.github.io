@@ -36,7 +36,7 @@
 			padding: 1em;
 			color:rgb(26, 204, 26);
 		}
-		#san{
+		#san,#SUB{
 			color:#ccc;
 			border:1px solid #ddd;
 			border-radius:7px;
@@ -44,13 +44,16 @@
 			font-weight:bold;
 			padding:.5em;
 		}
+		#SUB{
+			background-color:#da080a;
+		}
 	</style>
 <body>
 	<h1>PERSONAL CLOUD FILE UPLOAD SPAT-CLOUD (max 300KB)</h1>
 	<p id="idres" class="show">Upload UR FILES BY CHOOSING FILES</p>
 	<form onsubmit="return false;" id="MTR" method="POST">
 		<input type="file" name="stream" id="san">
-		<input type="submit" value="upload" onclick="Sub()">
+		<input type="submit" value="upload" id="SUB" onclick="Sub()">
 	</form>
 <script>
 	var Fr = document.getElementById('san');
